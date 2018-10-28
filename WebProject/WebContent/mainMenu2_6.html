@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>광민대학교</title>
+	<style>
+		.title {
+			text-shadow: 2px 2px 0px gray;
+		}
+			
+		#content {
+			width : 860px;
+			margin-top : 50px;
+			margin-bottom:50px;
+			height : 1015px;
+			border : 10px solid blue;
+			overflow: hidden;
+		}
+		
+		#sectionContent {
+			text-align: center;
+		}
+		
+		#sectionContent > label {
+			margin-top : 70px;
+			width : 200px;
+			height : 70px;
+			border : 1px solid blue;
+			display: inline-block;
+			font-weight: bold;
+			font-size: 25px;
+			padding-top : 40px;
+		}
+		
+		#sectionContent > input {
+			width : 0px;
+		}
+		
+		#middle > div {
+			width : 51.5px;
+			height : 100px;
+			border : 1px solid white;
+			float : left;
+		}
+
+		#bottom > div:nth-child(4),#bottom > div:nth-child(16),
+		#bottom > div:nth-child(28),#bottom > div:nth-child(36)
+		{
+			border-right : 1px solid blue; 
+		}
+		
+		#middle > div:nth-child(4),#middle > div:nth-child(5),
+		#middle > div:nth-child(6),#middle > div:nth-child(7),
+		#middle > div:nth-child(8),#middle > div:nth-child(9),
+		#middle > div:nth-child(10),#middle > div:nth-child(11),
+		#middle > div:nth-child(12),#middle > div:nth-child(13),
+		#bottom > div:nth-child(13),#bottom > div:nth-child(14),
+		#bottom > div:nth-child(15),#bottom > div:nth-child(16),
+		#bottom > div:nth-child(17),#bottom > div:nth-child(18),
+		#bottom > div:nth-child(19),#bottom > div:nth-child(20)
+		{
+			border-bottom : 1px solid blue;
+		}
+		
+		#bottom > div:nth-child(2) {
+			width : 265px;
+			height : 300px;
+			border : 1px solid red;
+			float : left;
+		}
+		
+		#bottom > div:nth-child(1),#bottom > div:nth-child(3),
+		#bottom > div:nth-child(4),#bottom > div:nth-child(5),
+		#bottom > div:nth-child(6),#bottom > div:nth-child(8) {
+			width : 51.5px;
+			height : 300px;
+		}
+		
+		#bottom > div:nth-child(7) {
+			width : 265px;
+			height : 300px;
+			border : 1px solid red;
+			float : left;
+		}
+		
+		#bottom > div:nth-child(43) {
+			width : 265px;
+			height : 300px;
+			border : 1px solid red;
+			float : left;
+		}
+		
+		#bottom > div:nth-child(41),#bottom > div:nth-child(42),
+		#bottom > div:nth-child(44),#bottom > div:nth-child(45),
+		#bottom > div:nth-child(47),#bottom > div:nth-child(48)
+		{
+			width : 51.5px;
+			height : 300px;
+		}
+		
+		#bottom > div:nth-child(46) {
+			width : 265px;
+			height : 300px;
+			border : 1px solid red;
+			float : left;
+		}
+		
+		#bottom > div {
+			width : 51.5px;
+			height : 100px;
+			border : 1px solid white;
+			float : left;
+			text-align : center;
+		}
+		
+		#bottom > div > img {
+			width : 150px;
+			height : 200px;
+		}
+		
+		#bottom > div > p {
+			font-weight: bold;
+			font-size : 18px;
+			text-shadow: 2px 2px 2px gray;
+		}
+		
+		#content > div {
+			transition : all 1s;
+		}
+		
+		#rbMenu1:checked + label{ border : 3px solid blue; }
+		#rbMenu2:checked + label{ border : 3px solid blue; }
+		#rbMenu3:checked + label{ border : 3px solid blue; }
+		#rbMenu1:checked ~ #content > div { transform: translate(0px, 0px); }
+		#rbMenu2:checked ~ #content > div { transform: translate(0px, -1015px); }
+		#rbMenu3:checked ~ #content > div { transform: translate(0px, -2030px); }
+	</style>
+	<link rel="stylesheet" href="/WebProject/css/common.css">
+	<link rel="stylesheet" href="/WebProject/css/font.css">
+	<link rel="stylesheet" href="/WebProject/css/several.css">
+</head>
+<body>
+	<section>
+		<div id="sideMenu" class="sideMenu">
+			<img src="/WebProject/images/mini_banner/gmustory.png" class="mini_menuimg" />
+			<ul style="margin: 0px;">
+				<li><a href="#">광민소식지</a></li>
+				<li><a href="#">학생활동</a></li>
+				<li><a href="#">일반공지</a></li>
+				<li><a href="#">GMU 설문조사</a></li>
+				<li class="selected"><a href="#">학생회 소개</a></li>
+			</ul>
+		</div>
+		<div id="sectionContent" style="margin: 0px auto;">
+			<div class="title">GMU 학생회 소개</div>
+			<input type="radio" name="rbMenu" id="rbMenu1" checked> <label for="rbMenu1">총학생회</label>
+			<input type="radio" name="rbMenu" id="rbMenu2"> <label for="rbMenu2">인사과</label>
+			<input type="radio" name="rbMenu" id="rbMenu3"> <label for="rbMenu3">학생부</label>
+			<div id="content">
+				<div>
+					<div style="clear:both;"></div>
+					<div id="topBox1">
+						<div id="middle">
+							<div></div><div></div><div style="border-right:1px solid blue"></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div style="border-right:1px solid blue"></div><div></div>
+							<div></div><div></div><div></div><div style="border-right:1px solid blue"></div><div></div>
+							<div></div><div></div><div></div><div style="border-right:1px solid blue"></div><div></div>
+							<div></div><div></div>
+						</div>
+						<div style="clear:both;"></div>
+						<div id="bottom">
+							<div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생1.jpg" alt="" />
+								<p>회장<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div><div></div>
+							<div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생2.jpg" alt="" />
+								<p>부회장<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생3.jpg" alt="" />
+								<p>사무총장<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생4.jpg" alt="" />
+								<p>회원<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div>
+						</div>
+					</div>
+					<div style="clear:both;"></div>
+					<div id="topBox2">
+						<div style="clear:both;"></div>
+						<div id="middle">
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div style="border-right:1px solid blue"></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div style="border-right:1px solid blue"></div><div></div>
+							<div></div><div></div><div></div><div style="border-right:1px solid blue"></div><div></div>
+							<div></div><div></div><div></div><div style="border-right:1px solid blue"></div><div></div>
+							<div></div><div></div>
+						</div>
+						<div style="clear:both;"></div>
+						<div id="bottom">
+							<div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생1.jpg" alt="" />
+								<p>회장<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div><div></div>
+							<div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생2.jpg" alt="" />
+								<p>부회장<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생3.jpg" alt="" />
+								<p>사무총장<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생4.jpg" alt="" />
+								<p>회원<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div>
+						</div>
+					</div>
+					<div id="topBox3">
+						<div id="middle">
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div style="border-right:1px solid blue"></div><div></div><div></div>
+							<div></div><div></div><div></div><div style="border-right:1px solid blue"></div><div></div>
+							<div></div><div></div><div></div><div style="border-right:1px solid blue"></div><div></div>
+							<div></div><div></div><div></div><div style="border-right:1px solid blue"></div><div></div>
+							<div></div><div></div>
+						</div>
+						<div style="clear:both;"></div>
+						<div id="bottom">
+							<div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생1.jpg" alt="" />
+								<p>회장<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div><div></div>
+							<div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생2.jpg" alt="" />
+								<p>부회장<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div></div><div></div><div></div><div></div><div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생3.jpg" alt="" />
+								<p>사무총장<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div>
+							<div>
+								<img src="/WebProject/images/광민소개/학생4.jpg" alt="" />
+								<p>회원<br>010-1234-5678</p>
+							</div>
+							<div></div><div></div>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+			
+			<div class="satisfy_box">
+
+				<div>
+					<img src="/WebProject/images/in.png" class="icon_size" />
+					<div class="middle_text">담당부서 : 생활관팀</div>
+					<img src="/WebProject/images/man.png" class="icon_size" />
+					<div class="middle_text">담당자 : 김찬호</div>
+					<img src="/WebProject/images/tel.png" class="icon_size" />
+					<div class="middle_text">연락처 : 043-649-7202</div>
+					<div style="margin-left: 60px;">최종수정일 : 2018-08-06</div>
+				</div>
+				<div>
+					<img src="/WebProject/images/pen.png" class="icon_size" />
+					<div>이 페이지에서 제공하는 정보에 대하여 만족하시나요?</div>
+					<div>
+						<input type="radio" name="radiogroup" /><label>매우만족</label> <input
+							type="radio" name="radiogroup" /><label>만족</label> <input
+							type="radio" name="radiogroup" /><label>보통</label> <input
+							type="radio" name="radiogroup" /><label>불만족</label> <input
+							type="radio" name="radiogroup" /><label>매우불만족</label>
+					</div>
+					<div>
+						<input type="text" id="satisfy_text" /> <input type="button"
+							class="button small_bt" value="등록하기" />
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div style="clear: both;"></div>
+	</section>
+
+	<footer>
+		<div id="footerText">
+			<div id="logoImage">
+				<img src="/WebProject/images/GM_image.png" alt="" />
+			</div>
+			<div id="service">
+				<h4>고객광민센터 010-9357-0287</h4>
+				<div>운영시간 00:00 ~ 24:00,점심시간 X</div>
+				<div>*주말 및 공휴일은 1:1 문의/상담을 이용해주세요.</div>
+			</div>
+			<img id="TextImage" src="/WebProject/images/footerText.PNG" alt="" />
+
+			<div id="footerRightImage">
+				<div>
+					<img src="/WebProject/images/페이스북.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/트위터.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/위치.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

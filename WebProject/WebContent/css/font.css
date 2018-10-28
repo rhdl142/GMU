@@ -1,0 +1,32 @@
+/*글자 색상, 크기*/
+
+
+body,div,p,span,ul,ol,li,table,td,th,input,textarea,button,a{
+   
+   font-family:'NotoSans-CondensedLight';
+   
+}
+
+.title { color: Navy; font-size: 40px; font-family: 'NotoSans-CondensedExtraBold';}
+
+.bigTitle{ color: #1C687D; font-size: 30px; font-family: 'NotoSans-CondensedExtraBold'; }
+
+.smallTitle{ color: #32969B; font-size: 20px; font-family: 'NotoSans-CondensedLight'; }
+
+.content{ color: black; font-size: 14px; font-family: 'NotoSans-CondensedLight'; }
+
+.smallTitle:hover{ color: Jade;}
+
+
+/*인물이미지사진 박스*/
+
+.person_img_content { width: 750px; height: 460px; background-color: #FBF1E8;}
+
+.person_img{ width: 160px; height:200px; }
+
+.person_img_box{ width: 400px; height:320px; background-color: #225DAD;}
+
+.person_img_box > img {
+   
+   padding: 30px;
+}

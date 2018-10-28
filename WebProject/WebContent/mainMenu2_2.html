@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>광민대학교</title>
+	<style>
+		.title {
+			text-shadow: 2px 2px 0px gray;
+		}
+			
+		#content {
+			width : 860px;
+			margin-top : 50px;
+			height : 740px; 
+			overflow : hidden;
+		}
+		
+		#content > div {
+			transition  : all 1s;
+			column-count: 3;
+		}
+		#rbMenu1:checked + label{ border : 3px solid blue; }
+		#rbMenu2:checked + label{ border : 3px solid blue; }
+		#rbMenu3:checked + label{ border : 3px solid blue; }
+		#rbMenu4:checked + label{ border : 3px solid blue; }
+		#rbMenu5:checked + label{ border : 3px solid blue; }
+		#rbMenu1:checked ~ #content > div { transform: translate(0px, 0px); }
+		#rbMenu2:checked ~ #content > div { transform: translate(0px, -795px); }
+		#rbMenu3:checked ~ #content > div { transform: translate(0px, -1590px); }
+		#rbMenu4:checked ~ #content > div { transform: translate(0px, -2385px); }
+		#rbMenu5:checked ~ #content > div { transform: translate(0px, -3180px); }
+		
+		
+		#content > div > div {
+			opacity : 0.7;
+			transition : all 1s;
+		}
+		
+		#content > div > div:nth-child(1):hover { transform : scale(1.1,1.1); opacity : 1}
+		#content > div > div:nth-child(2):hover { transform : rotate(360deg); opacity : 1}
+		#content > div > div:nth-child(3):hover { transform : scale(1.1,1.1); opacity : 1}
+		#content > div > div:nth-child(4):hover { transform : rotate(360deg); opacity : 1}
+		#content > div > div:nth-child(5):hover { transform : scale(1.5,1.5); opacity : 1}
+		#content > div > div:nth-child(6):hover { transform : rotate(360deg); opacity : 1}
+		#content > div > div:nth-child(7):hover { transform : scale(1.1,1.1); opacity : 1}
+		#content > div > div:nth-child(8):hover { transform : rotate(360deg); opacity : 1}
+		#content > div > div:nth-child(9):hover { transform : scale(1.1,1.1); opacity : 1}
+		#content > div > div:nth-child(10):hover { transform : rotate(360deg); opacity : 1}
+		#content > div > div:nth-child(11) hover { transform : scale(1.5,1.5); opacity : 1}
+		#content > div > div:nth-child(12):hover { transform : rotate(360deg); opacity : 1}
+		#content > div > div:nth-child(13):hover { transform : scale(1.1,1.1); opacity : 1}
+		#content > div > div:nth-child(14):hover { transform : rotate(360deg); opacity : 1}
+		#content > div > div:nth-child(15):hover { transform : scale(1.1,1.1); opacity : 1}
+		#content > div > div:nth-child(16):hover { transform : rotate(360deg); opacity : 1}
+		#content > div > div:nth-child(17):hover { transform : scale(1.5,1.5); opacity : 1}
+		#content > div > div:nth-child(18):hover { transform : rotate(360deg); opacity : 1}
+		#content > div > div:nth-child(19):hover { transform : scale(1.1,1.1); opacity : 1}
+		#content > div > div:nth-child(20):hover { transform : rotate(360deg); opacity : 1}
+		#content > div > div:nth-child(21):hover { transform : scale(1.1,1.1); opacity : 1}
+		#content > div > div:nth-child(22):hover { transform : rotate(360deg); opacity : 1}
+		#content > div > div:nth-child(23):hover { transform : scale(1.5,1.5); opacity : 1}
+		#content > div > div:nth-child(24):hover { transform : rotate(360deg); opacity : 1}
+		
+		.item {
+			margin-bottom : 80px;
+			margin-left : 35px;
+			width : 200px;
+			border: 1px solid gray;
+			box-shadow: 2px 2px 2px gray;
+			border-radius: 10%;
+			transition : all 1s;
+			border: 1px solid black;
+			page-break-inside : avoid;
+		}
+		
+		.item > .txt {
+			margin-top : 10px;
+			padding-bottom : 10px;
+			font-size: 20px;
+			font-weight: bold;
+			color: blue;
+			border-bottom: 2px solid blue;
+			text-shadow: 2px 2px 2px gray;
+		}
+		
+		.item > img {
+			display : block;
+			width : 90%;
+			margin : 0px auto;
+			margin-top : 15px;
+			border-radius: 10%;
+			box-shadow: 2px 2px 2px gray;
+		}
+		
+		#sectionContent {
+			text-align :center;
+		}
+		
+		#sectionContent > input {
+			width : 0px;
+		}
+		
+		#sectionContent > label {
+			display : inline-block;
+			font-size : 18px;
+			width : 30px;
+			height : 30px;
+			border-radius : 10%;
+			text-align: center;
+			background-color : #DED9D2;
+			margin-bottom: 30px;
+			margin-top: 50px;  
+		}
+		
+	</style>
+	<link rel="stylesheet" href="/WebProject/css/common.css">
+	<link rel="stylesheet" href="/WebProject/css/font.css">
+	<link rel="stylesheet" href="/WebProject/css/several.css">
+</head>
+<body>
+	<header>
+		<div id="nav">
+			<div id="navsub">
+				<img src="/WebProject/images/로고2.png" alt="로고" class="logo" />
+				<div id="gmu">
+					<span>광민대학교</span>
+				</div>
+				<div id="menu">
+					<span>광민소개</span> <span>입학취업</span> <span>대학/대학원</span> <span>학사지원</span>
+					<span>대학생활</span> <span>연구/산학</span> <span>기관/시설</span> <span>GMUStory</span>
+				</div>
+				<div id="hoverMenu">
+					<div>
+						<ol>
+							<li><a href="">광민소개</a></li>
+							<li><a href="">광민교육</a></li>
+							<li><a href="">대학소개</a></li>
+							<li><a href="">총장 인삿말</a></li>
+							<li><a href="">캠퍼스 안내</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">대학홍보</a></li>
+							<li><a href="">수시모집</a></li>
+							<li><a href="">입학도우미</a></li>
+							<li><a href="">입학상담</a></li>
+							<li><a href="">정시모집</a></li>
+							<li><a href="">학생부종합</a></li>
+
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">공학과학대학</a></li>
+							<li><a href="">교양대학</a></li>
+							<li><a href="">대학-대학원</a></li>
+							<li><a href="">보건바이오대학</a></li>
+							<li><a href="">인문예술대학</a></li>
+							<li><a href="">일반대학원</a></li>
+							<li><a href="">자연과학대학</a></li>
+							<li><a href="">컴퓨터공학과</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">학사공지</a></li>
+							<li><a href="">학사일정</a></li>
+							<li><a href="">교직과정안내</a></li>
+							<li><a href="">장학안내</a></li>
+							<li><a href="">학사규정</a></li>
+							<li><a href="">제-증명서 발급</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">예비군소개</a></li>
+							<li><a href="">취-창업지원센터</a></li>
+							<li><a href="">통학버스</a></li>
+							<li><a href="">생활관 소개</a></li>
+							<li><a href="">자유 게시판</a></li>
+							<li><a href="">프리톡</a></li>
+							<li><a href="">학생커뮤니티</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">산학협력단</a></li>
+							<li><a href="">연구지원</a></li>
+							<li><a href="">산학혁렵단 인사말</a></li>
+							<li><a href="">일반공고</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">기구조직표</a></li>
+							<li><a href="">대학본부</a></li>
+							<li><a href="">대학현황</a></li>
+							<li><a href="">식단 안내</a></li>
+							<li><a href="">주차 안내</a></li>
+							<li><a href="">캠퍼스맵</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">로그인</a></li>
+							<li><a href="">Media</a></li>
+							<li><a href="">Photo</a></li>
+							<li><a href="">공지사항</a></li>
+							<li><a href="">보도자료</a></li>
+							<li><a href="">설문조사</a></li>
+							<li><a href="">학생회 소개</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</header>
+	
+	<section>
+		<div id="sideMenu" class="sideMenu">
+			<img src="/WebProject/images/mini_banner/gmustory.png" class="mini_menuimg" />
+			<ul style="margin: 0px;">
+				<li class="selected"><a href="#">광민소식지</a></li>
+				<li><a href="#">학생활동</a></li>
+				<li><a href="#">일반공지</a></li>
+				<li><a href="#">GMU 설문조사</a></li>
+				<li><a href="#">학생회 소개</a></li>
+			</ul>
+		</div>
+		<div id="sectionContent" style="margin: 0px auto;">
+			<div class="title">광민 소식지</div>
+			<input type="radio" name="rbMenu" id="start"> <label for="start">◀</label>
+			<input type="radio" name="rbMenu" id="rbMenu1" checked> <label for="rbMenu1">1</label>
+			<input type="radio" name="rbMenu" id="rbMenu2"> <label for="rbMenu2">2</label>
+			<input type="radio" name="rbMenu" id="rbMenu3"> <label for="rbMenu3">3</label>
+			<input type="radio" name="rbMenu" id="rbMenu4"> <label for="rbMenu4">4</label>
+			<input type="radio" name="rbMenu" id="rbMenu5"> <label for="rbMenu5">5</label>
+			<input type="radio" name="rbMenu" id="end"> <label for="end">▶</label>
+			<div id="content">
+				<div>
+					<div class="item">
+						<div class="txt">소식지 1호</div>
+						<img src="/WebProject/images/광민소개/소식지9.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 2호</div>
+						<img src="/WebProject/images/광민소개/소식지9.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 3호</div>
+						<img src="/WebProject/images/광민소개/소식지13.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 4호</div>
+						<img src="/WebProject/images/광민소개/소식지9.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 5호</div>
+						<img src="/WebProject/images/광민소개/소식지6.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 6호</div>
+						<img src="/WebProject/images/광민소개/소식지6.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 7호</div>
+						<img src="/WebProject/images/광민소개/소식지7.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 8호</div>
+						<img src="/WebProject/images/광민소개/소식지8.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 9호</div>
+						<img src="/WebProject/images/광민소개/소식지9.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 10호</div>
+						<img src="/WebProject/images/광민소개/소식지10.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 11호</div>
+						<img src="/WebProject/images/광민소개/소식지3.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 12호</div>
+						<img src="/WebProject/images/광민소개/소식지4.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 13호</div>
+						<img src="/WebProject/images/광민소개/소식지5.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 14호</div>
+						<img src="/WebProject/images/광민소개/소식지6.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 15호</div>
+						<img src="/WebProject/images/광민소개/소식지3.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 16호</div>
+						<img src="/WebProject/images/광민소개/소식지1.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 17호</div>
+						<img src="/WebProject/images/광민소개/소식지1.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 18호</div>
+						<img src="/WebProject/images/광민소개/소식지1.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 19호</div>
+						<img src="/WebProject/images/광민소개/소식지1.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 20호</div>
+						<img src="/WebProject/images/광민소개/소식지1.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 21호</div>
+						<img src="/WebProject/images/광민소개/소식지1.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 22호</div>
+						<img src="/WebProject/images/광민소개/소식지1.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 23호</div>
+						<img src="/WebProject/images/광민소개/소식지1.png" alt="" />
+					</div>
+					<div class="item">
+						<div class="txt">소식지 24호</div>
+						<img src="/WebProject/images/광민소개/소식지1.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+			
+			<div class="satisfy_box">
+
+				<div>
+					<img src="/WebProject/images/in.png" class="icon_size" />
+					<div class="middle_text">담당부서 : 생활관팀</div>
+					<img src="/WebProject/images/man.png" class="icon_size" />
+					<div class="middle_text">담당자 : 김찬호</div>
+					<img src="/WebProject/images/tel.png" class="icon_size" />
+					<div class="middle_text">연락처 : 043-649-7202</div>
+					<div style="margin-left: 60px;">최종수정일 : 2018-08-06</div>
+				</div>
+				<div>
+					<img src="/WebProject/images/pen.png" class="icon_size" />
+					<div>이 페이지에서 제공하는 정보에 대하여 만족하시나요?</div>
+					<div>
+						<input type="radio" name="radiogroup" /><label>매우만족</label> <input
+							type="radio" name="radiogroup" /><label>만족</label> <input
+							type="radio" name="radiogroup" /><label>보통</label> <input
+							type="radio" name="radiogroup" /><label>불만족</label> <input
+							type="radio" name="radiogroup" /><label>매우불만족</label>
+					</div>
+					<div>
+						<input type="text" id="satisfy_text" /> <input type="button"
+							class="button small_bt" value="등록하기" />
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div style="clear: both;"></div>
+	</section>
+
+	<footer>
+		<div id="footerText">
+			<div id="logoImage">
+				<img src="/WebProject/images/GM_image.png" alt="" />
+			</div>
+			<div id="service">
+				<h4>고객광민센터 010-9357-0287</h4>
+				<div>운영시간 00:00 ~ 24:00,점심시간 X</div>
+				<div>*주말 및 공휴일은 1:1 문의/상담을 이용해주세요.</div>
+			</div>
+			<img id="TextImage" src="/WebProject/images/footerText.PNG" alt="" />
+
+			<div id="footerRightImage">
+				<div>
+					<img src="/WebProject/images/페이스북.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/트위터.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/위치.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
