@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>광민대학교 취/창업 지원센터</title>
+
+<style>
+	#menuBox{
+		width: 100%;
+		height: 100px;
+		opacity:0.85;
+		border: 1px solid;
+	}
+	
+	#menuBox > div {
+		float: left;
+	}
+	#menuBox >img{
+		float: left;
+	}
+	#communityLogo{
+		margin-top:20px;
+		width: 60px;
+		height: 60px;
+		float: left;
+	}
+	
+	#communityLogo+div{
+		margin-top:20px;
+		font-size: 35px;
+		font-weight: bold;
+		color: white;
+	}
+	
+	#communityLogo+div+div+div{
+		margin-top:-10px;
+		margin-left: 150px;
+		font-size: 20px;
+		font-weight: normal;
+		color: white;
+	}
+	
+	
+	
+	
+	@keyframes ani{
+		from{
+			transform:translate(0px,0px);
+		}
+		to{
+			transform:translate(0px,-200px);
+		}
+	}
+	
+	
+	#submenuList{
+		list-style: none;
+	}
+	
+	#submenuList > li{
+	
+		float: left;
+		margin: 25px;
+		cursor: pointer;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	
+	
+	
+	.titleName{
+		font-size: 13px;
+	}
+	
+	.date{
+	font-size: 12px;
+		font-weight: lighter;
+		margin-left: 20px;
+	}
+	
+	#topBanner{
+		border: 0px solid red;
+		width: 100%;
+		height: 300px;
+	}
+	#topBanner > img{
+		padding-left: 70px;
+	}
+	
+	#buttons{
+		width: 1000px;
+		height: 100px;
+		border: 0px solid red;
+		background-color: #DED9D2;
+		padding-left: 120px;
+		margin-bottom: 100px;
+	}
+	
+	#buttons > .bt_box{
+		border:0px solid red;
+		float: left;
+		width: 80px;
+		height: 80px;
+		margin: 10px 30px 10px 30px;
+		cursor: pointer;
+	}
+	
+	.bt_box > img{
+		margin-left: 15px;
+	}
+	
+	.bt_box > .bt_name{
+		font-size: 12.5px;
+		font-weight: bold;
+	}
+	
+	.left_box{
+		border:0px solid gray;
+		width: 500px;
+		height:250px;
+		padding:5px;
+		
+		float: left;
+	}
+	.right_box{
+		border:0px solid gray;
+		margin-left:50px;
+		width: 500px;
+		height:250px;
+		padding:5px;
+		
+		float: left;
+	}
+	
+	.emp_list > li{
+		font-size: 13px;
+		cursor: pointer;
+	}
+	
+	#slide_box{
+		width: 1000px;
+		height: 90px;
+		border: 0px solid gray;
+		overflow: hidden;
+		margin: 20px 0px 20px 0px;
+	}
+	
+	#slide_box > div{
+		border: 0px solid red;
+		width: 3000px;
+		height: 90px;
+		margin: 10px;
+		animation-name:ani;
+		animation-duration:50s;
+		animation-iteration-count:infinite;
+		animation-timing-function:linear;
+		animation-direction: alternate;
+	}
+	
+	#slide_box > div >img{
+		float: left;
+		margin: 10px;
+		width: 180px;
+		height: 70px;
+		border: 0px solid;
+		cursor: pointer;
+	}
+	
+	@keyframes ani{
+		from{
+			transform:translate(0px,0px);
+		}
+		to{
+			transform:translate(-2000px,0px);
+		}
+	}
+	
+	#buttons_box > div{
+		float: left;
+		margin: 0px 0px 10px 0px;
+		background-color: #fff;
+		padding:15px 40px 15px 40px;
+		border-right:1px solid gray;
+		border-left:1px solid gray;
+		font-size:12px;
+		color: black;
+	}
+	
+	#buttons_box > div:hover {
+		background-color: #6AABD3;
+		cursor:pointer;
+		font-weight: bold;
+		
+	}
+	
+	#buttons_box > div:hover > a{
+		color: #ffffff;
+	}
+	
+	
+	
+</style>
+<link rel="stylesheet" href="/WebProject/css/common.css">
+<link rel="stylesheet" href="/WebProject/css/several.css">
+<link rel="stylesheet" href="/WebProject/css/font.css">
+</head>
+<body>
+	<header>
+		<div id="menuBox">
+				<div>
+					<img id="communityLogo" src="/WebProject/images/로고2.png" alt="로고" />
+					<div style="float:left;">광민대학교</div> <div style="clear: both;"></div>
+					<div>취/창업 지원센터</div>
+					<div style="clear: both;"></div>
+				</div>
+		
+		<div id="submenus">
+			<ul id="submenuList">
+				<li>센터 소개</li>
+				<li>채용정보</li>
+				<li>프로그램</li>
+				<li>커뮤니티</li>
+				<li>창업정보</li>
+			</ul>
+		</div>
+			
+			
+			
+		</div>
+		<div style="clear: both;"></div>
+		
+	</header>
+	
+	<section class="nonBorder">
+		<div id="topBanner" style="position: relative;">
+			<img src="/WebProject/images/seokhyon/취창업지원센터.png" alt="탑 배너 이미지"/>
+		</div>
+	
+	
+	<div style="clear: both;"></div>
+	
+	<div id="buttons">
+		<div class="bt_box">
+			<img src="/WebProject/images/seokhyon/채용정보.PNG" alt="" />
+			<div class="bt_name">&nbsp;&nbsp;&nbsp;&nbsp;채용정보</div>
+		</div>
+		<div class="bt_box">
+			<img src="/WebProject/images/seokhyon/창업정보.PNG" alt="" />
+			<div class="bt_name">&nbsp;&nbsp;&nbsp;창업정보</div>
+		</div>
+		<div class="bt_box">
+			<img src="/WebProject/images/seokhyon/진로가이드.PNG" alt="" />
+			<div class="bt_name">&nbsp;&nbsp;진로가이드</div>
+		</div>
+		<div class="bt_box">
+			<img src="/WebProject/images/seokhyon/프로그램신청.PNG" alt="" />
+			<div class="bt_name">프로그램신청</div>
+		</div>
+		<div class="bt_box">
+			<img src="/WebProject/images/seokhyon/상담예약.PNG" alt="" />
+			<div class="bt_name">&nbsp;&nbsp;&nbsp;상담예약</div>
+		</div>
+		<div class="bt_box">
+			<img src="/WebProject/images/seokhyon/취업가이드.PNG" alt="" />
+			<div class="bt_name">&nbsp;&nbsp;취업가이드</div>
+		</div>
+	</div>
+	
+	<div class="left_box">
+		<h1>채용정보</h1>
+		
+		  <div id = "buttons_box">
+          		<div><a>교내채용</a></div>
+          		<div><a>일반채용</a></div>
+          		<div><a>인턴십</a></div>
+          		<div><a>공기업</a></div>
+          </div>
+		
+		<ul class="emp_list">
+			<li>[교내] 을지대학교 대전캠퍼스 생활관 사감 채용 안내 <span class="date">2018.10.24</span></li>
+			<li>[병원] 대전 을지대학교병원 영상의학과 방사선사 모... <span class="date">2018.10.19</span></li>
+			<li>[병원] 대전 을지대학교병원 IRB(임상시험심사위원회)... <span class="date">2018.10.19</span></li>
+			<li>[병원] 노원 을지대학교 을지병원 총무팀 산업안전기... <span class="date">2018.10.15</span></li>
+			<li>[병원] 대전 을지대학교 병원 IRB 사무원 모집 안내 <span class="date">2018.10.12</span></li>
+		</ul>
+	</div>
+	<div class="right_box">
+		<h1>공지사항</h1>
+		<div style="height: 25px;"></div>
+		<ul class="emp_list">
+			<li>상담예약 관련 안내(필독) <span class="date">2018.10.17</span></li>
+			<li>2018년 하반기 EU커리어 엘리트 프로그램 참여자 모집... <span class="date">2018.09.13</span></li>
+			<li> 청년구직자의 보이스피싱 범죄 연루 피해예방 안내 <span class="date">2018.09.13</span></li>
+			<li>삼성 「기회균등 특별채용」 안내 <span class="date">2018.08.31</span></li>
+			<li>공공기관채용일정(5.24(목)NCS취업특화전략 특강 내용... <span class="date">2018.06.04</span></li>
+		</ul>
+	</div>
+	<div style="clear: both;"></div>
+	<!-- <input type="checkbox" id="right_dir" name="direction" style="float: left;"/> -->
+	<div id="slide_box" style="float: left;">
+	
+		<div>
+			<a href="https://www.naver.com/"><img src="/WebProject/images/seokhyon/saramin.PNG" alt=""/></a>
+			<a href="https://www.naver.com/"><img src="/WebProject/images/seokhyon/공무원.PNG" alt="" /></a>
+			<img src="/WebProject/images/seokhyon/워크넷.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/인크루트.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/잡코리아.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/한국산업인력공단.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/청년포탈.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/saramin.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/인크루트.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/잡코리아.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/한국산업인력공단.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/청년포탈.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/saramin.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/인크루트.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/잡코리아.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/한국산업인력공단.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/청년포탈.PNG" alt="" />
+			<img src="/WebProject/images/seokhyon/saramin.PNG" alt="" />
+		</div>
+	</div>
+
+	<div style="clear: both;"></div>
+	<div class="satisfy_box" style="margin-left: 70px;">
+          			
+          			<div>
+          				<img src="/WebProject/images/in.png" class="icon_size"/>
+          				<div class="middle_text">담당부서 : 생활관팀</div>
+          				<img src="/WebProject/images/man.png" class="icon_size"/>
+          				<div class="middle_text">담당자 :  김찬호</div>
+          				<img src="/WebProject/images/tel.png" class="icon_size"/>
+          				<div class="middle_text">연락처 :  043-649-7202</div>
+          				<div style="margin-left: 60px;">최종수정일 :  2018-08-06</div>
+          			</div>
+          			<div>
+          				<img src="/WebProject/images/pen.png" class="icon_size"/>
+          				<div>이 페이지에서 제공하는 정보에 대하여 만족하시나요?</div>
+          				<div>
+          				<input type="radio" name="radiogroup" /><label>매우만족</label>
+          				<input type="radio" name="radiogroup" /><label>만족</label>
+          				<input type="radio" name="radiogroup" /><label>보통</label>
+          				<input type="radio" name="radiogroup" /><label>불만족</label>
+          				<input type="radio" name="radiogroup" /><label>매우불만족</label>
+          				</div>
+          				<div>
+          				<input type="text" id = "satisfy_text" />
+          				<input type="button" class="button small_bt" value="등록하기" />
+          				</div>
+          			</div>
+ 					
+          		</div>
+          		<div style="clear: both;"></div>
+          		
+          		
+	</section>
+	
+	<footer>
+            <div id="footerText">
+               <div id="logoImage">
+                  <img src="/WebProject/images/GM_image.png" alt="" />
+               </div>
+               <div id="service">
+               <h4>고객광민센터 010-9357-0287</h4>
+               <div>운영시간 00:00 ~ 24:00,점심시간 X</div>
+               <div>*주말 및 공휴일은 1:1 문의/상담을 이용해주세요.</div>               
+               </div>
+             <!-- <div class= "question">
+                  <img class= "bottomImage" src="../images/자주파는질문.png" alt="" />
+                  <div>자주하는질문</div>
+               </div>
+               <div class= "sangdam">
+                  <img class= "bottomImage" src="../images/1.1문의상담.png" alt="" />
+                  <div>고객 상담</div>
+               </div> -->
+               <img id="TextImage" src="/WebProject/images/footerText.PNG" alt="" />
+               
+               <div id="footerRightImage">
+                  <div>
+                     <img src="/WebProject/images/페이스북.png" alt="" />
+                  </div>
+                  <div>
+                     <img src="/WebProject/images/트위터.png" alt="" />
+                  </div>
+                  <div>
+                     <img src="/WebProject/images/위치.png" alt="" />
+                  </div>
+               </div>
+            </div>
+      </footer>
+</body>
+</html>

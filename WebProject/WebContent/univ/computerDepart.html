@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>광민대학교_컴퓨터 공학과</title>
+<link rel="stylesheet" href = "/WebClientTest/CSS/css/basic.css">
+<link rel="stylesheet" href="/WebProject/css/common.css">
+<link rel="stylesheet" href="/WebProject/css/font.css">
+<link rel="stylesheet" href="/WebProject/css/several.css">
+<style>
+
+	
+	#top-banner{
+		margin: 0px;
+		padding: 0px;
+		width: 1900px;
+		height: 300px;
+		border: 0px solid black;
+		background-color: #294763;
+		/* overflow: hidden; */
+		position:relative;
+		left: 0px;
+		top: 0px;
+	}
+	
+	#top-banner .menu{
+		border: 0px solid green;
+		display: block;
+		width: 1900px;
+		background-color: rgba(2,48,68,0.6);
+		/* background-color: rgba(187,209,130,0.5); */
+		font-size: 23px;
+		text-align: center;
+		padding-top: 13px;
+		padding-bottom: 5px;
+		float: left;
+		position: relative;
+		z-index: 4;
+	}
+	
+	#top-banner .menu > .menuName{
+		color: #FBF1E8;
+	}
+	
+	#top-banner .menu > .h_bar{
+		color: #FBF1E8;
+	}
+	
+
+	#top-banner .menu > .menuName:hover{
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	
+	/* 대학교 이미지 */
+	#top-banner .banner{
+		height: 300px;	
+		position: absolute;
+		top: 0px;
+		left: 950px;
+	}
+	 
+	
+	#top-banner .b_mark{
+		border: 0px solid green;
+		height: 250px;
+		position: absolute;
+		left: 0px;
+		top: 40px;
+		
+		/* 
+		position: relative;
+		z-index: 2;
+		left: -600px;
+		*/
+	}
+	
+	#top-banner .b_title .GM{
+		display: inline-block;
+		border: 0px solid green;
+		position: absolute;
+
+		font-size: 90px;
+		font-weight: bold;
+		letter-spacing: 7px;
+		color: #FBF1E8;		
+		opacity: .9;
+		left: 230px;
+		top: 65px;
+	}
+	
+	#top-banner .b_title .GM > span{
+		font-size: 93px;
+		color: #E36433;
+	}
+	
+	
+	
+	#top-banner .b_title .department{
+		display: inline-block;
+		border: 0px solid green;
+		opacity: 0.9;
+		
+		color: #FFE8C7;
+		font-size: 60px;   
+		letter-spacing: -6px;
+		position: absolute;
+		left: 450px;
+		top: 200px;
+	}
+	
+	/* #top-banner .b_title .b_deco{
+		display: inline-block;
+		border: 1px solid green;
+		
+		color: #A0B5B8;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	} */
+	
+	#top-banner .b_title .department > span{
+		font-size: 68px;
+		font-weight: bold;
+		opacity:inherit;
+	}
+
+	
+	/* water mark */
+	#top-banner .b_title .b_deco{
+		display: inline-block;
+		border: 0px solid green;
+		
+		color: #A0B5B8;
+		font-size: 100px;
+		
+		position: absolute;
+		left: 850px;
+		top: 80px;
+		
+		transform: rotate(8deg);
+		opacity: .3; 
+	}
+	
+	#top-banner .b_title .b_deco > span{
+		color: #E36433;
+	}
+	
+	.schoolpic{
+		border-radius: 10px;
+		margin-top: 0px;
+		width: 1000px;
+		border: 0px solid red;
+		float: left:
+	}
+	
+	.subpic{
+		border: 0px solid red;
+		width: 300px;
+		height: 170px;
+		float: left;
+		display: inline-block;
+		margin: 15px;
+	}
+	
+	#photo{
+		width: 1500px;
+		height: 200px;
+		border: 0px solid green;
+	}
+	
+	#slide{
+		margin-top: 20px;
+		border: 5px solid #32969B;
+		background-color: rgba(222,217,210,0.5);
+		border-radius: 15px;
+		overflow: hidden;
+		width: 990px;
+		height: 250px;
+		padding-bottom: 100px;
+	}
+	#photo:hover > .subpic{
+		transform: translate(-330px, 0px);
+		transition: all 2s;
+	}
+	
+	#photo > .subpic{
+		float: left;
+	}
+	
+	.gallaryTitle{
+		border: 0px solid red;
+		border-radius: 20px;
+		width: 1000px;
+		padding: 0px;
+		margin-left: 420px;	
+		
+		padding: 20px 25px 5px 25px;
+		font-size: 2.5em;
+		font-weight: bold;
+		font-variant: small-caps;
+		background-color: #A0B5B8; 
+	}
+	
+	.gallaryExp{
+		border: 0px solid green;
+		margin-left: 415px;
+		
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+</style>
+</head>
+<body>
+	<!-- 광민대학교 > 공학과학대학 > 컴퓨터 공학과 -->
+	
+	<header>
+		<div id="top-banner" >
+			<div class = "menu">
+				<span class="menuName">학과소개</span><span class = "h_bar">&nbsp;&nbsp;|&nbsp;&nbsp;</span>&nbsp;
+				<span class="menuName">교육과정</span><span class = "h_bar">&nbsp;&nbsp;|&nbsp;&nbsp;</span>&nbsp;
+				<span class="menuName">입시안내</span><span class = "h_bar">&nbsp;&nbsp;|&nbsp;&nbsp;</span>&nbsp;
+				<span class="menuName">학생활동</span><span class = "h_bar">&nbsp;&nbsp;|&nbsp;&nbsp;</span>&nbsp;
+				<span class="menuName">열린마당</span>
+			</div>
+
+			<img class = "banner" src ="/WebProject/images/yeji/pimage (13).png">
+         <img class = "b_mark" src = "/WebProject/images/GM_mark/GM_image.png">
+
+			<div class="b_title">
+				<div class="GM"><span>광</span>민대학교</div>
+				<div class="department">광민대학교 <span>컴퓨터공학과</span></div>
+				<div class="b_deco">大同<span>光</span>民</div>
+			</div>
+		</div>
+		
+	</header>
+	
+	<section>
+
+		<img src="/WebProject/images/yeji/mainpic.png" class="schoolpic">
+	
+		<div id=slide>
+			<span class="gallaryTitle">Gallary</span>
+			<div id="photo">
+				<img src="/WebProject/images/yeji/pimage (20).jpeg" class="subpic">
+				<img src="/WebProject/images/yeji/pimage (27).jpg" class="subpic">
+				<img src="/WebProject/images/yeji/pimage (5).jpg" class="subpic">
+				<img src="/WebProject/images/yeji/pimage (5).jpeg" class="subpic">
+			</div>
+			<span class="gallaryExp"> 광민대학교 컴퓨터 공학과 </span>
+		</div>
+		
+		<div style="height: 50px;"></div>
+		<div class="satisfy_box">
+					<div>
+						<img src="/WebProject/images/in.png" class="icon_size" />
+						<div class="middle_text">담당부서 : 생활관팀</div>
+						<img src="/WebProject/images/man.png" class="icon_size" />
+						<div class="middle_text">담당자 : 김찬호</div>
+						<img src="/WebProject/images/tel.png" class="icon_size" />
+						<div class="middle_text">연락처 : 043-649-7202</div>
+						<div style="margin-left: 60px;">최종수정일 : 2018-08-06</div>
+					</div>
+					<div>
+						<img src="/WebProject/images/pen.png" class="icon_size" />
+						<div>이 페이지에서 제공하는 정보에 대하여 만족하시나요?</div>
+						<div>
+							<input type="radio" name="radiogroup" /><label>매우만족</label> <input
+								type="radio" name="radiogroup" /><label>만족</label> <input
+								type="radio" name="radiogroup" /><label>보통</label> <input
+								type="radio" name="radiogroup" /><label>불만족</label> <input
+								type="radio" name="radiogroup" /><label>매우불만족</label>
+						</div>
+						<div>
+							<input type="text" id="satisfy_text" /> <input type="button"
+								class="button small_bt" value="등록하기" />
+						</div>
+					</div>
+
+				 </div> 
+		
+		
+		<!-- <div style="clear:both;"></div> -->
+	</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>광민대학교</title>
+	<style>
+		section {
+			
+		}
+		
+		.title {
+			text-shadow: 2px 2px 0px gray;
+		}
+		
+		#content {
+			width : 860px;
+			margin-top : 50px;
+		}
+		
+		#content > input {
+			margin : 0px;
+			padding : 0px;
+			width : 0px;
+		}
+		
+		#content > label {
+			display : inline-block;
+			background-color : #DED9D2;
+			padding : 40px;
+		}
+		
+		#chongJang {
+			width: 860px;
+			transition : all 1s;
+			height : 520px;
+			overflow: hidden;
+		}
+		
+		#chongJang > div {
+			float :left;
+			height : 520px;
+			transition : all 1s;
+		}
+		#rbMenu1:checked + label{ border : 3px solid black; }
+		#rbMenu2:checked + label{ border : 3px solid black; }
+		#rbMenu3:checked + label{ border : 3px solid black; }
+		#rbMenu4:checked + label{ border : 3px solid black; }
+		#rbMenu5:checked + label{ border : 3px solid black; }
+		#rbMenu6:checked + label{ border : 3px solid black; }
+		#rbMenu1:checked ~ #chongJang > div { transform: translate(0px, 0px); }
+		#rbMenu2:checked ~ #chongJang > div { transform: translate(0px, -520px); }
+		#rbMenu3:checked ~ #chongJang > div { transform: translate(0px, -1040px); }
+		#rbMenu4:checked ~ #chongJang > div { transform: translate(0px, -1560px); }
+		#rbMenu5:checked ~ #chongJang > div { transform: translate(0px, -2080px); }
+		#rbMenu6:checked ~ #chongJang > div { transform: translate(0px, -2600px); }
+		
+		#chongJang > div > img {
+			margin : 40px;
+			width : 280px;
+			display: block;
+			float : left;
+			border-radius : 30px;
+			box-shadow : 2px 2px 2px #aaa;
+		}
+		
+		#Hhistory {
+			width : 390px;
+			padding : 50px;
+			float :right;
+		}
+		
+		#Hhistory > div > ul {
+			list-style: square;
+		}
+		
+		#Hhistory > div > ul > li {
+			margin-top : 8px;
+		}
+	</style>
+	<link rel="stylesheet" href="/WebProject/css/common.css">
+	<link rel="stylesheet" href="/WebProject/css/font.css">
+	<link rel="stylesheet" href="/WebProject/css/several.css">
+</head>
+<body>
+	<header>
+		<div id="nav">
+			<div id="navsub">
+				<img src="/WebProject/images/로고2.png" alt="로고" class="logo" />
+				<div id="gmu">
+					<span>광민대학교</span>
+				</div>
+				<div id="menu">
+					<span><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></span> <span><a href="">입학취업</a></span> <span><a href="">대학/대학원</a></span> <span><a href="/WebProject/support/notice.htm">학사지원</a></span>
+					<span><a href="/WebProject/univercityActivity/dormitory.html">대학생활</a></span> <span><a href="/WebProject/research/hello.html">연구/산학</a></span> <span><a href="/WebProject/organization/organization.html">기관/시설</a></span> <span><a href="/WebProject/gmuStory/mainMenu2_1.html">GMUStory</a></span>
+				</div>
+				<div id="hoverMenu">
+					<div>
+						<ol>
+							<li><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_2.html">광민교육</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_3.html">대학소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_4.html">총장 인삿말</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_5.html">캠퍼스 안내</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">대학홍보</a></li>
+							<li><a href="">수시모집</a></li>
+							<li><a href="">입학도우미</a></li>
+							<li><a href="">입학상담</a></li>
+							<li><a href="">정시모집</a></li>
+							<li><a href="">학생부종합</a></li>
+
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+							<li><a href="/WebProject/univ/subclass.html">교양대학</a></li>
+							<li><a href="/WebProject/univ/univ_depart.html">대학-대학원</a></li>
+							<li><a href="/WebProject/univ/medical_home.html">보건바이오대학</a></li>
+							<li><a href="/WebProject/univ/art_home.html">인문예술대학</a></li>
+							<li><a href="/WebProject/univ/graduateSchool.html">일반대학원</a></li>
+							<li><a href="/WebProject/univ/science_home.html">자연과학대학</a></li>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/support/notice.htm">학사공지</a></li>
+							<li><a href="/WebProject/support/calendar.htm">학사일정</a></li>
+							<li><a href="/WebProject/support/teaching.htm">교직과정안내</a></li>
+							<li><a href="/WebProject/support/scholarship.htm">장학안내</a></li>
+							<li><a href="#">학사규정</a></li>
+							<li><a href="#">제-증명서 발급</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univercityActivity/army_act.html">예비군소개</a></li>
+							<li><a href="/WebProject/univercityActivity/employee.html" target="_blank">취-창업지원센터</a></li>
+							<li><a href="/WebProject/univercityActivity/bus.html">통학버스</a></li>
+							<li><a href="/WebProject/univercityActivity/dormitory.html">생활관 소개</a></li>
+							<li><a href="/WebProject/univercityActivity/community.html" target="_blank">학생커뮤니티</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/research/mainMenu6_1.html" target="_blank">산학협력단</a></li>
+							<li><a href="/WebProject/research/research.html">연구지원</a></li>
+							<li><a href="/WebProject/research/hello.html">산학혁렵단 인사말</a></li>
+							<li><a href="/WebProject/research/generalAnnounce.html">일반공고</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/organization/organization.html">기구조직표</a></li>
+							<li><a href="#">대학본부</a></li>
+							<li><a href="#">대학현황</a></li>
+							<li><a href="#">식단 안내</a></li>
+							<li><a href="#">주차 안내</a></li>
+							<li><a href="#">캠퍼스맵</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/gmuStory/mainMenu2_1.html">로그인</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_2.html">Media</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_3.html">Photo</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_4.html">공지사항</a></li>
+							<li><a href="#">보도자료</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_5.html">설문조사</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_6.html">학생회 소개</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</header>
+	<section>
+		<div id="sideMenu" class="sideMenu">
+			<img src="/WebProject/images/mini_banner/광민소개.png" class="mini_menuimg" />
+			<ul style="margin: 0px;">
+				<li><a href="mainMenu1_1.html">광민소개</a></li>
+				<li><a href="mainMenu1_2.html">광민교육</a></li>
+				<li><a href="mainMenu1_3.html">대학소개</a></li>
+				<li class="selected"><a href="mainMenu1_4.html">총장 인삿말</a></li>
+				<li><a href="mainMenu1_5.html">캠퍼스 안내</a></li>
+			</ul>
+		</div>
+		<div id="sectionContent" style="margin: 0px auto;">
+			<div class="title">역대 총장</div>
+			<div id="content">
+				<input type="radio" name="rbMenu" id="rbMenu1" checked> <label for="rbMenu1">김석현</label>
+				<input type="radio" name="rbMenu" id="rbMenu2"> <label for="rbMenu2">이인열</label>
+				<input type="radio" name="rbMenu" id="rbMenu3"> <label for="rbMenu3">원예지</label>
+				<input type="radio" name="rbMenu" id="rbMenu4"> <label for="rbMenu4">한상민</label>
+				<input type="radio" name="rbMenu" id="rbMenu5"> <label for="rbMenu5">송미령</label>
+				<input type="radio" name="rbMenu" id="rbMenu6"> <label for="rbMenu6">임광민</label>
+				<div id="chongJang">
+					<div>
+						<img src="/WebProject/images/광민소개/kim.jpg" alt="" />
+						<div id="Hhistory">
+							<div style="font-size: 30px;">학력</div>
+							<div>
+								<ul>
+									<li>1960&nbsp&nbsp&nbsp&nbsp서울 고등학교 졸업</li>
+									<li>1964&nbsp&nbsp&nbsp&nbsp서울대학교 법학대학 졸업</li>
+									<li>1979&nbsp&nbsp&nbsp&nbsp미국 서던메소디스트 대학 대학원(석사)</li>
+									<li>1980&nbsp&nbsp&nbsp&nbsp미국 켈리포니아대 버클리대학원 수료​</li>
+									<li>2002&nbsp&nbsp&nbsp&nbsp일본 규슈 대학교 법학박사</li>
+								</ul>
+							</div>
+							<div style="clear:both"></div>
+							<div style="font-size: 30px;">경력</div>
+							<div>
+								<ul>
+									<li>1969&nbsp&nbsp&nbsp&nbsp서울대학교 법학연구소 전임으로 임용​</li>
+									<li>1984&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 정교수​</li>
+									<li>1988&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 학장​</li>
+									<li>1992&nbsp&nbsp&nbsp&nbsp국제노동법연구원 원장​</li>
+									<li>1994&nbsp&nbsp&nbsp&nbsp행정쇄신위원​</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div>
+						<img src="/WebProject/images/광민소개/총장사진.png" alt="" />
+						<div id="Hhistory">
+							<div style="font-size: 30px;">학력</div>
+							<div>
+								<ul>
+									<li>1960&nbsp&nbsp&nbsp&nbsp광주 고등학교 졸업</li>
+									<li>1964&nbsp&nbsp&nbsp&nbsp서울대학교 법학대학 졸업</li>
+									<li>1979&nbsp&nbsp&nbsp&nbsp미국 서던메소디스트 대학 대학원(석사)</li>
+									<li>1980&nbsp&nbsp&nbsp&nbsp미국 켈리포니아대 버클리대학원 수료​</li>
+									<li>2002&nbsp&nbsp&nbsp&nbsp일본 규슈 대학교 법학박사</li>
+								</ul>
+							</div>
+							<div style="clear:both"></div>
+							<div style="font-size: 30px;">경력</div>
+							<div>
+								<ul>
+									<li>1969&nbsp&nbsp&nbsp&nbsp서울대학교 법학연구소 전임으로 임용​</li>
+									<li>1984&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 정교수​</li>
+									<li>1988&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 학장​</li>
+									<li>1992&nbsp&nbsp&nbsp&nbsp국제노동법연구원 원장​</li>
+									<li>1994&nbsp&nbsp&nbsp&nbsp행정쇄신위원​</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div>
+						<img src="/WebProject/images/광민소개/원예지.jpg" alt="" />
+						<div id="Hhistory">
+							<div style="font-size: 30px;">학력</div>
+							<div>
+								<ul>
+									<li>1960&nbsp&nbsp&nbsp&nbsp전주 고등학교 졸업</li>
+									<li>1964&nbsp&nbsp&nbsp&nbsp서울대학교 법학대학 졸업</li>
+									<li>1979&nbsp&nbsp&nbsp&nbsp미국 서던메소디스트 대학 대학원(석사)</li>
+									<li>1980&nbsp&nbsp&nbsp&nbsp미국 켈리포니아대 버클리대학원 수료​</li>
+									<li>2002&nbsp&nbsp&nbsp&nbsp일본 규슈 대학교 법학박사</li>
+								</ul>
+							</div>
+							<div style="clear:both"></div>
+							<div style="font-size: 30px;">경력</div>
+							<div>
+								<ul>
+									<li>1969&nbsp&nbsp&nbsp&nbsp서울대학교 법학연구소 전임으로 임용​</li>
+									<li>1984&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 정교수​</li>
+									<li>1988&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 학장​</li>
+									<li>1992&nbsp&nbsp&nbsp&nbsp국제노동법연구원 원장​</li>
+									<li>1994&nbsp&nbsp&nbsp&nbsp행정쇄신위원​</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div>
+						<img src="/WebProject/images/광민소개/한상민.jpg" alt="" />
+						<div id="Hhistory">
+							<div style="font-size: 30px;">학력</div>
+							<div>
+								<ul>
+									<li>1960&nbsp&nbsp&nbsp&nbsp목포 고등학교 졸업</li>
+									<li>1964&nbsp&nbsp&nbsp&nbsp서울대학교 법학대학 졸업</li>
+									<li>1979&nbsp&nbsp&nbsp&nbsp미국 서던메소디스트 대학 대학원(석사)</li>
+									<li>1980&nbsp&nbsp&nbsp&nbsp미국 켈리포니아대 버클리대학원 수료​</li>
+									<li>2002&nbsp&nbsp&nbsp&nbsp일본 규슈 대학교 법학박사</li>
+								</ul>
+							</div>
+							<div style="clear:both"></div>
+							<div style="font-size: 30px;">경력</div>
+							<div>
+								<ul>
+									<li>1969&nbsp&nbsp&nbsp&nbsp서울대학교 법학연구소 전임으로 임용​</li>
+									<li>1984&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 정교수​</li>
+									<li>1988&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 학장​</li>
+									<li>1992&nbsp&nbsp&nbsp&nbsp국제노동법연구원 원장​</li>
+									<li>1994&nbsp&nbsp&nbsp&nbsp행정쇄신위원​</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div>
+						<img src="/WebProject/images/광민소개/송미령.jpg" alt="" />
+						<div id="Hhistory">
+							<div style="font-size: 30px;">학력</div>
+							<div>
+								<ul>
+									<li>1960&nbsp&nbsp&nbsp&nbsp순천 고등학교 졸업</li>
+									<li>1964&nbsp&nbsp&nbsp&nbsp서울대학교 법학대학 졸업</li>
+									<li>1979&nbsp&nbsp&nbsp&nbsp미국 서던메소디스트 대학 대학원(석사)</li>
+									<li>1980&nbsp&nbsp&nbsp&nbsp미국 켈리포니아대 버클리대학원 수료​</li>
+									<li>2002&nbsp&nbsp&nbsp&nbsp일본 규슈 대학교 법학박사</li>
+								</ul>
+							</div>
+							<div style="clear:both"></div>
+							<div style="font-size: 30px;">경력</div>
+							<div>
+								<ul>
+									<li>1969&nbsp&nbsp&nbsp&nbsp서울대학교 법학연구소 전임으로 임용​</li>
+									<li>1984&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 정교수​</li>
+									<li>1988&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 학장​</li>
+									<li>1992&nbsp&nbsp&nbsp&nbsp국제노동법연구원 원장​</li>
+									<li>1994&nbsp&nbsp&nbsp&nbsp행정쇄신위원​</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div>
+						<img src="/WebProject/images/광민소개/임광민.jpg" alt="" />
+						<div id="Hhistory">
+							<div style="font-size: 30px;">학력</div>
+							<div>
+								<ul>
+									<li>1960&nbsp&nbsp&nbsp&nbsp순천 고등학교 졸업</li>
+									<li>1964&nbsp&nbsp&nbsp&nbsp서울대학교 법학대학 졸업</li>
+									<li>1979&nbsp&nbsp&nbsp&nbsp미국 서던메소디스트 대학 대학원(석사)</li>
+									<li>1980&nbsp&nbsp&nbsp&nbsp미국 켈리포니아대 버클리대학원 수료​</li>
+									<li>2002&nbsp&nbsp&nbsp&nbsp일본 규슈 대학교 법학박사</li>
+								</ul>
+							</div>
+							<div style="clear:both"></div>
+							<div style="font-size: 30px;">경력</div>
+							<div>
+								<ul>
+									<li>1969&nbsp&nbsp&nbsp&nbsp서울대학교 법학연구소 전임으로 임용​</li>
+									<li>1984&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 정교수​</li>
+									<li>1988&nbsp&nbsp&nbsp&nbsp서울대학교 법과대학 학장​</li>
+									<li>1992&nbsp&nbsp&nbsp&nbsp국제노동법연구원 원장​</li>
+									<li>1994&nbsp&nbsp&nbsp&nbsp행정쇄신위원​</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear : both"></div>
+			<div class="satisfy_box">
+				<div>
+					<img src="/WebProject/images/in.png" class="icon_size" />
+					<div class="middle_text">담당부서 : 생활관팀</div>
+					<img src="/WebProject/images/man.png" class="icon_size" />
+					<div class="middle_text">담당자 : 김찬호</div>
+					<img src="/WebProject/images/tel.png" class="icon_size" />
+					<div class="middle_text">연락처 : 043-649-7202</div>
+					<div style="margin-left: 60px;">최종수정일 : 2018-08-06</div>
+				</div>
+				<div>
+					<img src="/WebProject/images/pen.png" class="icon_size" />
+					<div>이 페이지에서 제공하는 정보에 대하여 만족하시나요?</div>
+					<div>
+						<input type="radio" name="radiogroup" /><label>매우만족</label> <input
+							type="radio" name="radiogroup" /><label>만족</label> <input
+							type="radio" name="radiogroup" /><label>보통</label> <input
+							type="radio" name="radiogroup" /><label>불만족</label> <input
+							type="radio" name="radiogroup" /><label>매우불만족</label>
+					</div>
+					<div>
+						<input type="text" id="satisfy_text" /> <input type="button"
+							class="button small_bt" value="등록하기" />
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div style="clear: both;"></div>
+	</section>
+
+	<footer>
+		<div id="footerText">
+			<div id="logoImage">
+				<img src="/WebProject/images/GM_image.png" alt="" />
+			</div>
+			<div id="service">
+				<h4>고객광민센터 010-9357-0287</h4>
+				<div>운영시간 00:00 ~ 24:00,점심시간 X</div>
+				<div>*주말 및 공휴일은 1:1 문의/상담을 이용해주세요.</div>
+			</div>
+			<img id="TextImage" src="/WebProject/images/footerText.PNG" alt="" />
+
+			<div id="footerRightImage">
+				<div>
+					<img src="/WebProject/images/페이스북.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/트위터.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/위치.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 연구/산학 > 일반공고</title>
+<style>
+	html, body { height: 100%; margin: 0px; padding: 0px; }
+	section{
+		min-height: calc(100vh- 232px;)
+	}
+	
+	tr > td:nth-child(2):hover {
+		text-decoration: underline;
+	}
+
+
+	/* 페이징 관련  */
+	.page_num{
+	 	float: left;
+	 	width: 20px;
+	 	height: 20px;
+	 	border: 1px solid gray;
+	 	text-align: center;
+	 	margin: 0px 3px 0px 3px;
+	 	border-radius: 5px;
+	}
+	
+	.page_num:hover{
+		color: white;
+		background-color:black;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	
+	.side_bt{
+		margin-top: 3px;
+		margin-right: 1px;
+		cursor: pointer;
+	}
+	.side_bt:hover {
+		border: 1.5px solid gray;
+	}
+	#paging{
+		margin-left: 550px;
+	}
+
+</style>
+<link rel="stylesheet" href="/WebProject/css/common.css">
+<link rel="stylesheet" href="/WebProject/css/several.css">
+<link rel="stylesheet" href="/WebProject/css/font.css"></head>
+ <body>
+      <header>
+		<div id="nav">
+			<div id="navsub">
+				<img src="/WebProject/images/로고2.png" alt="로고" class="logo" />
+				<div id="gmu">
+					<span>광민대학교</span>
+				</div>
+				<div id="menu">
+					<span><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></span> <span><a href="">입학취업</a></span> <span><a href="">대학/대학원</a></span> <span><a href="/WebProject/support/notice.htm">학사지원</a></span>
+					<span><a href="/WebProject/univercityActivity/dormitory.html">대학생활</a></span> <span><a href="/WebProject/research/hello.html">연구/산학</a></span> <span><a href="/WebProject/organization/organization.html">기관/시설</a></span> <span><a href="/WebProject/gmuStory/mainMenu2_1.html">GMUStory</a></span>
+				</div>
+				<div id="hoverMenu">
+					<div>
+						<ol>
+							<li><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_2.html">광민교육</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_3.html">대학소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_4.html">총장 인삿말</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_5.html">캠퍼스 안내</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">대학홍보</a></li>
+							<li><a href="">수시모집</a></li>
+							<li><a href="">입학도우미</a></li>
+							<li><a href="">입학상담</a></li>
+							<li><a href="">정시모집</a></li>
+							<li><a href="">학생부종합</a></li>
+
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+							<li><a href="/WebProject/univ/subclass.html">교양대학</a></li>
+							<li><a href="/WebProject/univ/univ_depart.html">대학-대학원</a></li>
+							<li><a href="/WebProject/univ/medical_home.html">보건바이오대학</a></li>
+							<li><a href="/WebProject/univ/art_home.html">인문예술대학</a></li>
+							<li><a href="/WebProject/univ/graduateSchool.html">일반대학원</a></li>
+							<li><a href="/WebProject/univ/science_home.html">자연과학대학</a></li>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/support/notice.htm">학사공지</a></li>
+							<li><a href="/WebProject/support/calendar.htm">학사일정</a></li>
+							<li><a href="/WebProject/support/teaching.htm">교직과정안내</a></li>
+							<li><a href="/WebProject/support/scholarship.htm">장학안내</a></li>
+							<li><a href="#">학사규정</a></li>
+							<li><a href="#">제-증명서 발급</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univercityActivity/army_act.html">예비군소개</a></li>
+							<li><a href="/WebProject/univercityActivity/employee.html" target="_blank">취-창업지원센터</a></li>
+							<li><a href="/WebProject/univercityActivity/bus.html">통학버스</a></li>
+							<li><a href="/WebProject/univercityActivity/dormitory.html">생활관 소개</a></li>
+							<li><a href="/WebProject/univercityActivity/community.html" target="_blank">학생커뮤니티</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/research/mainMenu6_1.html" target="_blank">산학협력단</a></li>
+							<li><a href="/WebProject/research/research.html">연구지원</a></li>
+							<li><a href="/WebProject/research/hello.html">산학혁렵단 인사말</a></li>
+							<li><a href="/WebProject/research/generalAnnounce.html">일반공고</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/organization/organization.html">기구조직표</a></li>
+							<li><a href="#">대학본부</a></li>
+							<li><a href="#">대학현황</a></li>
+							<li><a href="#">식단 안내</a></li>
+							<li><a href="#">주차 안내</a></li>
+							<li><a href="#">캠퍼스맵</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/gmuStory/mainMenu2_1.html">로그인</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_2.html">Media</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_3.html">Photo</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_4.html">공지사항</a></li>
+							<li><a href="#">보도자료</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_5.html">설문조사</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_6.html">학생회 소개</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</header>
+
+      <section>
+         <div id= "sideMenu" class="sideMenu">
+         <img src="/WebProject/images/mini_banner/연구산학.png" class="mini_menuimg"/>
+		<ul style="margin: 0px;">
+			<li><a href="hello.html">산학협력단 인사말</a></li>
+			<li class="selected"><a href="generalAnnounce.html">일반 공고</a></li>
+			<li><a href="research.html">연구지원</a></li>
+			<li><a href="mainMenu6_1.html" target="_blank">연구/산학 사업단</a></li>
+		</ul>
+	</div>
+          <div id="sectionContent" style="margin: 0px auto;"> 
+				
+          		<h1>일반공고</h1>
+          		
+          		<table class="bbsTable">
+          			<tr>
+          				<th>순번</th>
+          				<th>제목</th>
+          				<th>부서명</th>
+          				<th style="width: 100px;">등록일</th>
+          				<th>조회</th>
+          				<th>첨부</th>
+          			</tr>
+          			<tr>
+          				<td>1740</td>
+          				<td>[농림축산식품부]2018년도 농림축산식품 연구개발사업 시행계획 추진</td>
+          				<td>산학협력연구지원파트</td>
+          				<td>2018-10-15</td>
+          				<td>32</td>
+          				<td></td>
+          			</tr>
+          			<tr>
+          				<td>1739</td>
+          				<td>[농촌진흥청]2019년 농촌진흥청 농업과학기술 연구개발사업 신규과제 정기공모...</td>
+          				<td>산학협력연구지원파트</td>
+          				<td>2018-10-04</td>
+          				<td>39</td>
+          				<td></td>
+          			</tr>
+          			<tr>
+          				<td>1738</td>
+          				<td>[한국국제협력단]KOICA 다년간 성과중심 봉사단 사업기관제안형 위탁기관 공모...</td>
+          				<td>산학협력연구지원파트</td>
+          				<td>2018-09-28</td>
+          				<td>26</td>
+          				<td></td>
+          			</tr>
+          			<tr>
+          				<td>1737</td>
+          				<td>[한국전력공사]‘19년 지원 사외공모 기초연구개별 수행후보기관 모집 공모...</td>
+          				<td>전력공사협력부</td>
+          				<td>2018-09-20</td>
+          				<td>21</td>
+          				<td></td>
+          			</tr>
+          			<tr>
+          				<td>1736</td>
+          				<td>[학교안전공제중앙회]학교 현장 재난대비훈련 매뉴얼 및 사전교육 컨텐츠 개발 용역 입찰 공고...</td>
+          				<td>공통안전부</td>
+          				<td>2018-09-18</td>
+          				<td>10</td>
+          				<td></td>
+          			</tr>
+          			<tr>
+          				<td>1735</td>
+          				<td>[충남대학교산학협력단][BRIDGE+] 충남대학교 기술 융·복합 프로젝트 지원사업 공고...</td>
+          				<td>산학협력연구지원파트</td>
+          				<td>2018-09-10</td>
+          				<td>38</td>
+          				<td></td>
+          			</tr>
+          			<tr>
+          				<td>1734</td>
+          				<td>[환경부] 2018년도 기후변화대응 환경기술개발사업 신규과제...</td>
+          				<td>산학협력연구지원파트</td>
+          				<td>2018-09-04</td>
+          				<td>21</td>
+          				<td></td>
+          			</tr>
+          			<tr>
+          				<td>1733</td>
+          				<td>[한국과학창의재단]2018년 과학영재교육 정책연구 공모</td>
+          				<td>산학협력연구지원파트</td>
+          				<td>2018-08-29</td>
+          				<td>27</td>
+          				<td></td>
+          			</tr>
+          			<tr>
+          				<td>1732</td>
+          				<td>[한국대학교육협의회] 대학자율역량강화지원사업ACE+ 성과 백서 연구 공모 안내...</td>
+          				<td>산학협력연구지원파트</td>
+          				<td>2018-08-28</td>
+          				<td>27</td>
+          				<td></td>
+          			</tr>
+          			<tr>
+          				<td>1731</td>
+          				<td>[과학기술정보통신부]2018년도 연구노트 작성·관리 실태 점검</td>
+          				<td>산학협력연구지원파트</td>
+          				<td>2018-08-27</td>
+          				<td>16</td>
+          				<td></td>
+          			</tr>
+        
+          		</table>
+          </div>
+          
+          <div style="clear: both;"></div>
+          
+          <div id="paging">
+          	<input class="side_bt" type="button" style="background-image: url('/WebProject/images/seokhyon/left2.png'); background-size: 90%; height: 16px; float: left;" />
+          	<input class="side_bt" type="button" style="background-image: url('/WebProject/images/seokhyon/left.png'); background-size: 100%; height: 16px; float: left;" />
+        	<div class="page_num" style="color: white;background-color:black;font-weight: bold;" >1</div>
+        	<div class="page_num" >2</div>
+        	<div class="page_num" >3</div>
+        	<div class="page_num" >4</div>
+        	<div class="page_num" >5</div>
+        	<div class="page_num" >6</div>
+        	<div class="page_num" >7</div>
+        	<div class="page_num" >8</div>
+        	<div class="page_num" >9</div>
+        	<div class="page_num" >10</div>
+        	<input class="side_bt" type="button" style="background-image: url('/WebProject/images/seokhyon/right.png'); background-size: 90%; height: 16px; float: left;" />
+        	<input class="side_bt" type="button" style="background-image: url('/WebProject/images/seokhyon/right2.png'); background-size: 100%; height: 16px; float: left;" />
+          </div>
+      </section>
+   
+       <footer>
+            <div id="footerText">
+               <div id="logoImage">
+                  <img src="/WebProject/images/GM_image.png" alt="" />
+               </div>
+               <div id="service">
+               <h4>고객광민센터 010-9357-0287</h4>
+               <div>운영시간 00:00 ~ 24:00,점심시간 X</div>
+               <div>*주말 및 공휴일은 1:1 문의/상담을 이용해주세요.</div>               
+               </div>
+             <!-- <div class= "question">
+                  <img class= "bottomImage" src="../images/자주파는질문.png" alt="" />
+                  <div>자주하는질문</div>
+               </div>
+               <div class= "sangdam">
+                  <img class= "bottomImage" src="../images/1.1문의상담.png" alt="" />
+                  <div>고객 상담</div>
+               </div> -->
+               <img id="TextImage" src="/WebProject/images/footerText.PNG" alt="" />
+               
+               <div id="footerRightImage">
+                  <div>
+                     <img src="/WebProject/images/페이스북.png" alt="" />
+                  </div>
+                  <div>
+                     <img src="/WebProject/images/트위터.png" alt="" />
+                  </div>
+                  <div>
+                     <img src="/WebProject/images/위치.png" alt="" />
+                  </div>
+               </div>
+            </div>
+      </footer>
+   </body>
+
+</html>

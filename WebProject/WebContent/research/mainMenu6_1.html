@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel = "stylesheet" href="/WebClientTest/css/css/basic.css">
+	<style>
+		header {
+			background-repeat: no-repeat;
+			width: 1905px;
+			background-size: 1905px;
+		}
+		
+		.logo {
+			width: 230px;
+			margin-top : 20px;
+			padding-left : 30px;
+		}
+		
+		#nav {
+			text-align: center;
+		}
+		
+		#nav>#navsub {
+			width : 1905px;
+			float: left;
+			margin-left: 5px;
+		}
+		
+		#navsub {
+			width: 1663px;
+			position: relative;
+			left: 0px;
+			top: 0px;
+		}
+		
+		#nav>div:after {
+			content: " ";
+			display: block;
+			clear: both;
+		}
+		
+		#menu {
+			margin-right: 55px;
+			margin-top: 80px;
+		}
+		
+		#menu>span {
+			margin-left: 40px;
+			font-size : 20px;
+			color : white;
+			font-weight: bold;
+			text-shadow: 2px 2px 2px gray;
+		}
+		
+		#menu span:nth-child(1):hover,#menu span:nth-child(2):hover,#menu span:nth-child(3):hover
+		,#menu span:nth-child(4):hover,#menu span:nth-child(5):hover,#menu span:nth-child(6):hover
+		,#menu span:nth-child(7):hover,#menu span:nth-child(8):hover {
+			border-bottom : 3px solid black;
+		}
+		 
+		#gmu {
+			font-size: 50px;
+			font-weight: bold;
+			width : 250px;
+			height : 80px;
+			display: inline-block;
+			color : black;
+		}
+		/* ----------------------hoverMenu------------------- */
+		#hoverMenu {
+			position : relative;
+			left : 0px;
+			top : 0px;
+			height: 200px;
+			transform: translate(-5px, -600px);
+			transition: all 1s;
+			background-color: #eee;
+			opacity: 1;
+			border-radius: 20%;
+			text-align: center;
+			margin-left : 675px;
+			margin-right : 650px;
+		}
+		
+		#menu:hover + #hoverMenu {
+			transform: translate(-5px, 10px);
+		}
+		
+		#hoverMenu>div {
+			width: 120px;
+			float: left;
+			margin-left: 16px;
+		}
+		
+		#hoverMenu>div>ol {
+			padding: 0px;
+		}
+		
+		#hoverMenu>div>ol>li {
+			list-style: none;
+			text-align: center;
+			padding-top: 8px;
+			padding : 0px;
+			margin-top : 2px;
+			font-weight: bold;
+			opacity : 1;
+		}
+		
+		#hoverMenu>div>ol>li>a {
+			text-decoration: none;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		/* ----------------------------------------------------------------  */
+		
+		body, html {
+			margin : 0%;
+			padding : 0%;
+			height : 100%;
+		}
+		
+		#all {
+			z-index: 1;
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+		}
+		
+		#all:after {
+			width: 1905px;
+			height: 100%;
+			z-index: -1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			background-image: url("/WebProject/images/광민소개/allImg.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-origin: content-box;
+			background-size: 100% 100%;
+			opacity: 0.3 !important;
+			filter: alpha(opacity = 30);
+		}
+		
+		#foot {
+			transform: translate(0px, 0px);
+			height : 330px;
+			width : 1905px;
+			overflow : hidden; 
+		}
+		
+		input {
+			width : 0%;
+		}
+		
+		label {
+			display : block;
+			width : 1905px;
+			text-align: center;
+			font-size : 45px;
+			font-weight: bold;
+			margin-bottom: 150px;
+		}
+
+		#rbMenu1:checked ~ div {
+			transform: translate(0px, -350px); 
+		}
+	
+		#rbMenu1:checked ~ label {
+			opacity : 0; 
+		}
+		
+		#sidefix {
+			width: 1905px;
+			margin-top : 100px;
+			height : 910px;
+			right: 0px;
+			text-align : center;
+		}
+		
+		#sidefix > div > img {
+			cursor : pointer;
+			width : 70px;
+			height : 70px;
+			border : 1px solid black;
+		}
+		
+		#sidefix > div > img:hover {
+			border : 10px solid blue;
+		}
+	</style>
+	<link rel="stylesheet" href="/WebProject/css/font.css">
+	<link rel="stylesheet" href="/WebProject/css/several.css">
+	<body>
+		<div id="all">
+			<header>
+				<div id="nav">
+					<div id="navsub">
+						<img src="/WebProject/images/로고2.png" alt="로고" class="logo" />
+						<div id="gmu">
+							<span style="color : black;">광민대학교</span>
+						</div>
+						<div id="menu">
+							<span><a href="">사업단소개</a></span> <span><a href="">과정개요</a></span>
+							<span><a href="">정보마당</a></span> <span><a href="">커뮤니티</a></span>
+						</div>
+						<div id="hoverMenu">
+							<div>
+								<ol>
+									<li><a href="">사업단개요</a></li>
+									<li><a href="">단장인사말</a></li>
+									<li><a href="">사업소개</a></li>
+									<li><a href="">사업단 조직구성</a></li>
+									<li><a href="">오시는길</a></li>
+								</ol>
+							</div>
+							<div>
+								<ol>
+									<li><a href="">마스터플랜</a></li>
+									<li><a href="">교육과정</a></li>
+									<li><a href="">취업지원사업</a></li>
+									<li><a href="">가족회사</a></li>
+								</ol>
+							</div>
+							<div>
+								<ol>
+									<li><a href="">각종서식</a></li>
+									<li><a href="">LINC+뉴스</a></li>
+									<li><a href="">포토갤러리</a></li>
+								</ol>
+							</div>
+							<div>
+								<ol>
+									<li><a href="">공지사항</a></li>
+									<li><a href="">Q&A</a></li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</header>
+			<div style="clear:both;"></div>
+			<div id="foot">
+				<nav id="sidefix">
+					<input type="radio" name="rbMenu" id="rbMenu1"> <label for="rbMenu1">더보기</label>
+					<div style="background-color : gray; padding-bottom: 50px; opacity : 0.7">
+						<input type="radio" name="rbMenu" id="rbMenu2"> <label for="rbMenu2">더보기</label>
+						<img src="/WebProject/images/man.png">
+						<img src="/WebProject/images/pen.png">
+						<img src="/WebProject/images/tel.png">
+						<img src="/WebProject/images/위치.png">
+						<img src="/WebProject/images/in.png">
+						<img src="/WebProject/images/트위터.png">
+						<img src="/WebProject/images/페이스북.png">
+					</div>
+				</nav>
+			</div>
+		</div>
+	</body>
+</html>

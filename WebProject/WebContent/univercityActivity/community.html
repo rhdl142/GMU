@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>광민대학교 커뮤니티 홈</title>
+
+<style>
+	#menuBox{
+		width: 100%;
+		height: 100px;
+		opacity:0.85;
+		background-size: 100px;
+	}
+	
+	#menuBox > div {
+		float: left;
+	}
+	#menuBox >img{
+		float: left;
+	}
+	#communityLogo{
+		margin-top:20px;
+		width: 60px;
+		height: 60px;
+		float: left;
+	}
+	
+	#communityLogo+div{
+		margin-top:20px;
+		font-size: 35px;
+		font-weight: bold;
+		color: white;
+	}
+	
+	#communityLogo+div+div+div{
+		margin-top:-10px;
+		margin-left: 150px;
+		font-size: 20px;
+		font-weight: normal;
+		color: white;
+	}
+	
+	#notify{
+		margin-top:30px;
+		margin-left: 200px;
+		width: 60px;
+		height: 60px;
+	}
+	
+	#right{
+		margin-top:30px;
+		padding-bottom: 10px;
+	}
+	
+	#notify_box{
+		margin-top:30px;
+		border:0px solid;
+		width:400px;
+		height:50px; 	
+		float: left;
+		overflow: hidden;
+	}
+	
+	#notify_box > div{
+		animation-name:ani;
+		animation-duration:30s;
+		animation-iteration-count:infinite;
+		transition-timing-function:linear;
+		
+		font-size: 15px;
+		font-weight: bold;
+		color: white;
+		cursor: pointer;
+	}
+	@keyframes ani{
+		from{
+			transform:translate(0px,0px);
+		}
+		to{
+			transform:translate(0px,-200px);
+		}
+	}
+	
+	#submenu{
+		border: 0px solid;
+		width: 300px;
+		height: 100px;
+		margin-left: 20px;
+	}
+	
+	#submenu > img{
+		width: 50px;
+		height: 50px;
+		margin-left: 250px;
+		margin-top: 40px;
+		cursor: pointer;
+	}
+	
+	#submenu > img:hover + #submenuList{
+		opacity: 1;
+	}
+	
+	#submenuList:hover{
+		opacity: 1;
+	}
+	
+	
+	#submenuList{
+		border: 0px solid red;
+		display: inline-block;
+		width: 300px;
+		height: 50px;
+		background-color: rgba(90,100,180,0.7);
+		opacity: 0;
+		
+		transition: all 1s;
+	}
+	
+	#submenuList > div{
+		float: left;
+		font-weight: bold;
+		color: white;
+		margin: 10px;
+		cursor: pointer;
+	}
+	
+	.left_box{
+		width: 425px;
+		height: 200px;
+		
+		float: left;
+	}
+	.right_box{
+		margin-left:10px;
+		width: 425px;
+		height: 200px;
+		
+		float: left;
+	}
+	
+	
+	.titleName{
+		font-size: 13px;
+	}
+	
+	.date{
+	font-size: 12px;
+		font-weight: lighter;
+		margin-left: 20px;
+	}
+	
+	
+</style>
+<link rel="stylesheet" href="/WebProject/css/common.css">
+<link rel="stylesheet" href="/WebProject/css/several.css">
+<link rel="stylesheet" href="/WebProject/css/font.css">
+</head>
+<body>
+	<header>
+		<div id="menuBox">
+				<div>
+				<img id="communityLogo" src="/WebProject/images/로고2.png" alt="로고" />
+				<div style="float:left;">광민대학교</div> <div style="clear: both;"></div>
+				<div>학생커뮤니티</div>
+				</div>
+			<img id="notify" alt="알림" src="/WebProject/images/seokhyon/m01.png">
+			<img id="right" alt="오른쪽 화살표" src="/WebProject/images/seokhyon/right.png">
+		
+			<div id="notify_box">
+				<div><번호팅, 봄이 다가옵니다> 꽃길... [2018-02-02]<br>
+번호팅에 대해서 궁금한 것이 있다면 ... [2018-03-21]<br>
+쎄임어스 포인트 지급 관련 안내 [2018-03-21]<br>
+쎄임어스 번호팅 조회에 관한 사전 안내 [2018-03-20]<br>
+번호팅에 대해서 궁금한 것이 있다면 ... [2018-03-21]<br>
+쎄임어스 포인트 지급 관련 안내 [2018-03-21]<br>
+쎄임어스 번호팅 조회에 관한 사전 안내 [2018-03-20]<br>
+번호팅에 대해서 궁금한 것이 있다면 ... [2018-03-21]<br>
+쎄임어스 포인트 지급 관련 안내 [2018-03-21]<br>
+쎄임어스 번호팅 조회에 관한 사전 안내 [2018-03-20]<br>
+번호팅에 대해서 궁금한 것이 있다면 ... [2018-03-21]<br>
+쎄임어스 포인트 지급 관련 안내 [2018-03-21]<br>
+쎄임어스 번호팅 조회에 관한 사전 안내 [2018-03-20]<br>
+				</div>
+			</div>
+			<div id="submenu">
+				<img alt="서브메뉴 아이콘" src="/WebProject/images/seokhyon/menu.png">
+				<div id="submenuList">
+					<div><a href="community.html">홈</a></div>
+					<div><a>공지사항</a></div>
+					<div><a href="community_free.html">자유게시판</a></div>
+					<div><a href="community_talk.html">프리톡</a></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section class="nonBorder">
+	
+	<div class="left_box">
+		<div class="title">조회수 베스트</div>
+		<hr>
+		<ul>
+			<li class="titleName">정모 후기 이벤트를 진행합니다. +1   <span class="date">2018-01-22</span></li>
+			<li class="titleName">정모 후기 이벤트를 진행합니다. +1   <span class="date">2018-01-22</span></li>
+			<li class="titleName"><번호팅, 봄이 다가옵니다> 꽃길은 연...  file	<span class="date">2018-02-02</span></li>
+			<li class="titleName"><번호팅, 봄이 다가옵니다> 꽃길은 연...  file	<span class="date">2018-02-02</span></li>
+			<li class="titleName">쎄임어스 번호팅 조회에 관한 사전 안내 	<span class="date">2018-03-20</span></li>
+			
+		</ul>
+	</div>
+	<div class="right_box">
+		<div class="title">추천수 베스트</div>
+		<hr>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="left_box">
+		<div class="bigTitle">공지사항</div>
+		<hr>
+		<ul>
+		<li class="titleName">번호팅에 대해서 궁금한 것이 있다면 꼭 읽... +5 	<span class="date">2018-03-21</span></li>
+		<li class="titleName">쎄임어스 포인트 지급 관련 안내 	<span class="date">2018-03-21</span></li>
+		<li class="titleName">쎄임어스 번호팅 조회에 관한 사전 안내 	<span class="date">2018-03-20</span></li>
+		<li class="titleName"><번호팅, 봄이 다가옵니다> 꽃길은 연...  file	<span class="date">2018-02-02</span></li>
+		<li class="titleName">정모 후기 이벤트를 진행합니다. +1  file	<span class="date">2018-01-22</span></li>
+		</ul>
+	</div>
+	<div class="right_box">
+		<div class="bigTitle">메인포스트</div>
+		<hr>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="left_box">
+		<div class="bigTitle">자유게시판</div>
+		<hr>
+	</div>
+	<div class="right_box">
+		<div class="bigTitle">프리톡</div>
+		<hr>
+		<ul>
+		<li class="titleName">룸메구하는분 불러주세요 ㅠㅠ 	<span class="date">2018-07-12</span></li>
+		<li class="titleName">빵집어디가  맛있어요 ㅎ 	<span class="date">2018-03-27</span></li>
+		<li class="titleName">빵집어디가  맛있어요 ㅎ 	<span class="date">2018-03-27</span></li>
+		<li class="titleName">학식제일맛잇는데가어디에요? +1 	<span class="date">2018-03-24</span></li>
+		<li class="titleName">학교앞 꿀술집 추청좀해주세용 	<span class="date">2018-03-23</span></li>
+		</ul>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="satisfy_box">
+          			
+          			<div>
+          				<img src="/WebProject/images/in.png" class="icon_size"/>
+          				<div class="middle_text">담당부서 : 생활관팀</div>
+          				<img src="/WebProject/images/man.png" class="icon_size"/>
+          				<div class="middle_text">담당자 :  김찬호</div>
+          				<img src="/WebProject/images/tel.png" class="icon_size"/>
+          				<div class="middle_text">연락처 :  043-649-7202</div>
+          				<div style="margin-left: 60px;">최종수정일 :  2018-08-06</div>
+          			</div>
+          			<div>
+          				<img src="/WebProject/images/pen.png" class="icon_size"/>
+          				<div>이 페이지에서 제공하는 정보에 대하여 만족하시나요?</div>
+          				<div>
+          				<input type="radio" name="radiogroup" /><label>매우만족</label>
+          				<input type="radio" name="radiogroup" /><label>만족</label>
+          				<input type="radio" name="radiogroup" /><label>보통</label>
+          				<input type="radio" name="radiogroup" /><label>불만족</label>
+          				<input type="radio" name="radiogroup" /><label>매우불만족</label>
+          				</div>
+          				<div>
+          				<input type="text" id = "satisfy_text" />
+          				<input type="button" class="button small_bt" value="등록하기" />
+          				</div>
+          			</div>
+ 					
+          		</div>
+          		<div style="clear: both;"></div>
+	</section>
+	
+	<footer>
+            <div id="footerText">
+               <div id="logoImage">
+                  <img src="/WebProject/images/GM_image.png" alt="" />
+               </div>
+               <div id="service">
+               <h4>고객광민센터 010-9357-0287</h4>
+               <div>운영시간 00:00 ~ 24:00,점심시간 X</div>
+               <div>*주말 및 공휴일은 1:1 문의/상담을 이용해주세요.</div>               
+               </div>
+             <!-- <div class= "question">
+                  <img class= "bottomImage" src="../images/자주파는질문.png" alt="" />
+                  <div>자주하는질문</div>
+               </div>
+               <div class= "sangdam">
+                  <img class= "bottomImage" src="../images/1.1문의상담.png" alt="" />
+                  <div>고객 상담</div>
+               </div> -->
+               <img id="TextImage" src="/WebProject/images/footerText.PNG" alt="" />
+               
+               <div id="footerRightImage">
+                  <div>
+                     <img src="/WebProject/images/페이스북.png" alt="" />
+                  </div>
+                  <div>
+                     <img src="/WebProject/images/트위터.png" alt="" />
+                  </div>
+                  <div>
+                     <img src="/WebProject/images/위치.png" alt="" />
+                  </div>
+               </div>
+            </div>
+      </footer>
+</body>
+</html>

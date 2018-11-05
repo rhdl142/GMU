@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>학사지원</title>
+<style>
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+section {
+	min-height: calc(100vh- 232px;
+	)
+}
+
+#box {
+	border: 1px solid gray;
+	background-color: gray;
+	border-radius: 6px;
+	width: 800px;
+	height: 60px;
+	margin-top: 40px;
+}
+
+#box #text {
+	color: white;
+	margin-top: 20px;
+	padding-left: 40px;
+}
+
+#box #check {
+	color: white;
+	margin-left: 50px;
+}
+
+#box>div {
+	display: inline;
+}
+
+#box #searchBox {
+	margin-left: 150px;
+	width: 100px;
+	height: 40px;
+}
+
+#box input[type="submit"] {
+	height: 39px;
+	border: none;
+	background-color: #ddd;
+	margin-top: 9px;
+}
+
+#box input[type="checkbox"] {
+	margin-left: 15px;
+}
+
+#calendar {
+	border: 0px solid #555;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+#schedule {
+	border-collapse: collapse;
+	width: 810px;
+}
+
+#calendar tr:first-child {
+	background-color: #f7f7f7;
+	height: 30px;
+	font-size: 14px;
+	border-bottom: transparent;
+}
+
+#calendar th, #calendar td {
+	border-bottom: 1px solid #dee0e3;
+	color: #666;
+}
+
+#calendar td {
+	padding: 10px 6px;
+}
+
+#calendar #month {
+	padding: 12px;
+	border-bottom: 1px solid #dee0e3;
+	color: #1461ac;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#calendar #graduate {
+	border: 1px solid #0479f4;
+	background-color: #0479f4;
+	color: white;
+	margin-right: 5px;
+}
+
+#calendar #learning {
+	border: 1px solid #0fa9c7;
+	background-color: #0fa9c7;
+	color: white;
+	margin-right: 5px;
+}
+
+#calendar .more{
+	background-color: #575757;
+	display: inline-block;
+	color: #fff;
+	width: 55px;
+	text-align: center;
+	margin-left: 10px;
+	cursor: pointer;
+}
+</style>
+	<link rel="stylesheet" href="/WebProject/css/common.css">
+	<link rel="stylesheet" href="/WebProject/css/font.css">
+	<link rel="stylesheet" href="/WebProject/css/several.css">
+</head>
+<body>
+	<header>
+		<div id="nav">
+			<div id="navsub">
+				<img src="/WebProject/images/로고2.png" alt="로고" class="logo" />
+				<div id="gmu">
+					<span>광민대학교</span>
+				</div>
+				<div id="menu">
+					<span><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></span> <span><a href="">입학취업</a></span> <span><a href="">대학/대학원</a></span> <span><a href="/WebProject/support/notice.htm">학사지원</a></span>
+					<span><a href="/WebProject/univercityActivity/dormitory.html">대학생활</a></span> <span><a href="/WebProject/research/hello.html">연구/산학</a></span> <span><a href="/WebProject/organization/organization.html">기관/시설</a></span> <span><a href="/WebProject/gmuStory/mainMenu2_1.html">GMUStory</a></span>
+				</div>
+				<div id="hoverMenu">
+					<div>
+						<ol>
+							<li><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_2.html">광민교육</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_3.html">대학소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_4.html">총장 인삿말</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_5.html">캠퍼스 안내</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">대학홍보</a></li>
+							<li><a href="">수시모집</a></li>
+							<li><a href="">입학도우미</a></li>
+							<li><a href="">입학상담</a></li>
+							<li><a href="">정시모집</a></li>
+							<li><a href="">학생부종합</a></li>
+
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+							<li><a href="/WebProject/univ/subclass.html">교양대학</a></li>
+							<li><a href="/WebProject/univ/univ_depart.html">대학-대학원</a></li>
+							<li><a href="/WebProject/univ/medical_home.html">보건바이오대학</a></li>
+							<li><a href="/WebProject/univ/art_home.html">인문예술대학</a></li>
+							<li><a href="/WebProject/univ/graduateSchool.html">일반대학원</a></li>
+							<li><a href="/WebProject/univ/science_home.html">자연과학대학</a></li>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/support/notice.htm">학사공지</a></li>
+							<li><a href="/WebProject/support/calendar.htm">학사일정</a></li>
+							<li><a href="/WebProject/support/teaching.htm">교직과정안내</a></li>
+							<li><a href="/WebProject/support/scholarship.htm">장학안내</a></li>
+							<li><a href="#">학사규정</a></li>
+							<li><a href="#">제-증명서 발급</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univercityActivity/army_act.html">예비군소개</a></li>
+							<li><a href="/WebProject/univercityActivity/employee.html" target="_blank">취-창업지원센터</a></li>
+							<li><a href="/WebProject/univercityActivity/bus.html">통학버스</a></li>
+							<li><a href="/WebProject/univercityActivity/dormitory.html">생활관 소개</a></li>
+							<li><a href="/WebProject/univercityActivity/community.html" target="_blank">학생커뮤니티</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/research/mainMenu6_1.html" target="_blank">산학협력단</a></li>
+							<li><a href="/WebProject/research/research.html">연구지원</a></li>
+							<li><a href="/WebProject/research/hello.html">산학혁렵단 인사말</a></li>
+							<li><a href="/WebProject/research/generalAnnounce.html">일반공고</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/organization/organization.html">기구조직표</a></li>
+							<li><a href="#">대학본부</a></li>
+							<li><a href="#">대학현황</a></li>
+							<li><a href="#">식단 안내</a></li>
+							<li><a href="#">주차 안내</a></li>
+							<li><a href="#">캠퍼스맵</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/gmuStory/mainMenu2_1.html">로그인</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_2.html">Media</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_3.html">Photo</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_4.html">공지사항</a></li>
+							<li><a href="#">보도자료</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_5.html">설문조사</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_6.html">학생회 소개</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</header>
+
+
+	<section>
+		<div id="sideMenu" class="sideMenu">
+			<img src="/WebProject/images/mini_banner/학사지원.png"
+				class="mini_menuimg" />
+			<ul style="margin: 0px;">
+				<li><a href="notice.htm">학사공지</a></li>
+				<li class="selected"><a href="calendar.htm">학사일정</a></li>
+				<li><a href="teaching.htm">교직과정안내</a></li>
+				<li><a href="scholarship.htm">장학안내</a></li>
+				<li><a href="#">학칙규정</a></li>
+				<li><a href="#">수강안내</a></li>
+				<li><a href="#">제ㆍ증명서발급</a></li>
+			</ul>
+		</div>
+		<div id="sectionContent" style="margin: 0px auto;">
+
+			<div class="bigTitle">학사일정</div>
+			<div id="box">
+				<div id="text">2018학년도 학사일정</div>
+
+				<div id="check">
+					<input type="checkbox" checked>학사 <input type="checkbox"
+						checked>장학 <input type="checkbox" checked>기획
+				</div>
+
+				<div id=search>
+					<select name="search" id="searchBox">
+						<option value="search_year1">2018학년도</option>
+						<option value="search_year2">2017학년도</option>
+					</select> <input type="submit" value="검색">
+
+				</div>
+
+				<div style="clear: both;"></div>
+			</div>
+			<div id="calendar">
+				<table id="schedule">
+					<tr>
+						<th>MONTH</th>
+						<th>DATE</th>
+						<th>SCHEDULE</th>
+					</tr>
+					<tr>
+						<td rowspan="7" id="month">3월</td>
+					</tr>
+					<tr>
+						<td>01(목)</td>
+						<td><a id="graduate">학사</a>삼일절(공휴일)</td>
+					</tr>
+					<tr>
+						<td>02(금)</td>
+						<td><a id="graduate">학사</a>제1학기 개강</td>
+					</tr>
+					<tr>
+						<td>06(화)~08(목)</td>
+						<td><a id="graduate">학사</a>수강정정</td>
+					</tr>
+					<tr>
+						<td>06(화)</td>
+						<td><a id="graduate">학사</a>편입생 오리엔테이션</td>
+					</tr>
+					<tr>
+						<td>20(화)~22(목)</td>
+						<td><a id="graduate">학사</a>수강포기</td>
+					</tr>
+					<tr>
+						<td>31(토)</td>
+						<td><a id="graduate">학사</a>학기개시 30일</td>
+					</tr>
+					
+					
+					<tr>
+						<td rowspan="5" id="month">4월</td>
+					</tr>
+					<tr>
+						<td>05(목)</td>
+						<td><a id="graduate">학사</a>수업1/3</td>
+					</tr>
+					<tr>
+						<td>20(금)~26(목)</td>
+						<td><a id="graduate">학사</a>중간고사</td>
+					</tr>
+					<tr>
+						<td>23(월)~05.04(금)</td>
+						<td><a id="learning">장학</a>다문화멘토링 멘토모집<a class="more">+more</a></td>
+					</tr>
+					<tr>
+						<td>30(월)</td>
+						<td><a id="graduate">학사</a>학기개시 60일</td>
+					</tr>
+					
+					
+					<tr>
+						<td rowspan="11" id="month">5월</td>
+					</tr>
+					<tr>
+						<td>01(화)</td>
+						<td><a id="graduate">학사</a>근로자의날(휴업일)</td>
+					</tr>
+					<tr>
+						<td>05(토)</td>
+						<td><a id="graduate">학사</a>어린이날(공휴일)</td>
+					</tr>
+					<tr>
+						<td>07(월)</td>
+						<td><a id="graduate">학사</a>대체공휴일</td>
+					</tr>
+					<tr>
+						<td>10(목)</td>
+						<td><a id="graduate">학사</a>수업2/3</td>
+					</tr>
+					<tr>
+						<td>15(화)~06.01(금)</td>
+						<td><a id="learning">장학</a>행복드림다자녀 및 다문화가정 자녀장학금<a class="more">+more</a></td>
+					</tr>
+					<tr>
+						<td>16(수)~18(금)</td>
+						<td><a id="graduate">학사</a>청룡체전</td>
+					</tr>
+					<tr>
+						<td>16(수)~25(금)</td>
+						<td><a id="learning">장학</a>하계집중[교외] 국가근로 신청안내<a class="more">+more</a></td>
+					</tr>
+					<tr>
+						<td>17(목)~06.15(금)</td>
+						<td><a id="learning">장학</a>2018-2학기 국가장학금 및 국가근로장학금 1차 신청 안내<a class="more">+more</a></td>
+					</tr>
+					<tr>
+						<td>22(화)</td>
+						<td><a id="graduate">학사</a>개교기념일/석가탄신일</td>
+					</tr>
+					<tr>
+						<td>30(수)</td>
+						<td><a id="graduate">학사</a>학기개시 90일</td>
+					</tr>
+
+				</table>
+			</div>
+
+			<div class="satisfy_box">
+
+				<div>
+					<img src="/WebProject/images/in.png" class="icon_size" />
+					<div class="middle_text">담당부서 : 교무연구팀</div>
+					<img src="/WebProject/images/man.png" class="icon_size" />
+					<div class="middle_text">담당자 : 김태우</div>
+					<img src="/WebProject/images/tel.png" class="icon_size" />
+					<div class="middle_text">연락처 : 043-649-7202</div>
+					<div style="margin-left: 40px;">최종수정일 : 2018-08-06</div>
+				</div>
+				<div>
+					<img src="/WebProject/images/pen.png" class="icon_size" />
+					<div>이 페이지에서 제공하는 정보에 대하여 만족하시나요?</div>
+					<div>
+						<input type="radio" name="radiogroup" /><label>매우만족</label> <input
+							type="radio" name="radiogroup" /><label>만족</label> <input
+							type="radio" name="radiogroup" /><label>보통</label> <input
+							type="radio" name="radiogroup" /><label>불만족</label> <input
+							type="radio" name="radiogroup" /><label>매우불만족</label>
+					</div>
+					<div>
+						<input type="text" id="satisfy_text" /> <input type="button"
+							class="button small_bt" value="등록하기" />
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+		<div style="clear: both;"></div>
+	</section>
+
+	<footer>
+		<div id="footerText">
+			<div id="logoImage">
+				<img src="/WebProject/images/GM_image.png" alt="" />
+			</div>
+			<div id="service">
+				<h4>고객광민센터 010-9357-0287</h4>
+				<div>운영시간 00:00 ~ 24:00,점심시간 X</div>
+				<div>*주말 및 공휴일은 1:1 문의/상담을 이용해주세요.</div>
+			</div>
+			<img id="TextImage" src="/WebProject/images/footerText.PNG" alt="" />
+
+			<div id="footerRightImage">
+				<div>
+					<img src="/WebProject/images/페이스북.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/트위터.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/위치.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>학사지원</title>
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		section {
+			min-height: calc(100vh- 232px);
+		}
+		
+		#menubutton ul li{
+			display: inline;
+			height: 60px;
+			font-size: 15px;
+			line-height: 1;
+			text-decoration: none;
+		}	
+	
+		#menubutton ul li a{
+			padding: 3% 4%;
+			font-size: 14px;
+			position: relative;
+			line-height: 120%;
+			cursor: pointer;
+			height: 20px;
+			display: block;
+			float: left;
+			border: 1px solid #dedede;
+			border-bottom: 1px solid #949494;	
+			margin-bottom: 30px;
+		}
+		
+		
+		#menubutton ul li a:hover, #menubutton ul li a:focus{
+			background-color: #1C687D;	
+			color: #fff;
+		}
+		
+		#menubutton ul li:first-child{
+			background-color: #1C687D;	
+			color: #fff;
+		}
+		
+		
+		#scholarship{
+			height: 250px;
+			border-top: 1px solid #617e9b;
+			background-color: #f1f3f6;
+			padding-left: 50px;
+			padding-right: 250px;
+			position: relative;
+			margin-top: 20px;
+			margin-bottom: 40px;
+			
+		}
+		
+		#scholarship #img1{
+			border: 0px solid black;
+			width: 290px;
+			height:150px;
+			display: block;
+			background-image: url("../images/miryeng/장학설명배경.png");
+			background-repeat: no-repeat;
+			margin-left: 450px;
+			
+		}
+		
+		#scholarship #img2{
+			border: 0px solid black;
+			width: 100px;
+			height:100px;
+			display: block;
+			background-image: url("../images/miryeng/장학설명배경2.png");
+			background-repeat: no-repeat;
+			margin-left: 540px;
+			margin-top: -110px;
+		}
+		
+		#scholarship #name{
+			display: block;
+			color: #0d4291;
+			font-size: 24px;
+			margin-top: 0px;
+			margin-bottom: 15px;
+			margin-top: -100px;
+		}
+		
+		
+		#scholarship #text{
+			font-size: 16px;
+			color: #666;
+			line-height: 140%;
+			display: inline-block;
+		}
+		
+		
+		.content #tblScholar{
+			border-top: 2px solid #1C687D;
+			border-collapse: collapse;
+			width: 733px;
+			margin-top: 20px;
+			margin-left: 40px;
+			margin-bottom: 50px; 
+		}
+		
+		.content #tblScholar th, .content #tblScholar td{
+			border: 1px solid #d2d2d2;
+		}
+		
+		.content #tblScholar td:last-child,
+		.content #tblScholar th:last-child
+		{
+			border-right: none;
+		}
+		
+		
+		.content #tblScholar th:first-child,
+		.content #tblScholar tr:nth-child(2) > td:first-child
+		{
+			border-left: none;
+		}
+		
+		#tblScholar th, #tblScholar td{
+			border: 1px solid #d2d2d2;
+			text-align: center;
+			height: 60px;
+
+		}
+		
+		.content #tblScholar th{
+			height: 40px;
+			background-color: #f4f4f4;
+		
+		}
+		
+		
+		
+	</style>
+	<link rel="stylesheet" href="/WebProject/css/common.css">
+	<link rel="stylesheet" href="/WebProject/css/font.css">
+	<link rel="stylesheet" href="/WebProject/css/several.css">
+</head>
+<body>
+	<header>
+		<div id="nav">
+			<div id="navsub">
+				<img src="/WebProject/images/로고2.png" alt="로고" class="logo" />
+				<div id="gmu">
+					<span>광민대학교</span>
+				</div>
+				<div id="menu">
+					<span><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></span> <span><a href="">입학취업</a></span> <span><a href="">대학/대학원</a></span> <span><a href="/WebProject/support/notice.htm">학사지원</a></span>
+					<span><a href="/WebProject/univercityActivity/dormitory.html">대학생활</a></span> <span><a href="/WebProject/research/hello.html">연구/산학</a></span> <span><a href="/WebProject/organization/organization.html">기관/시설</a></span> <span><a href="/WebProject/gmuStory/mainMenu2_1.html">GMUStory</a></span>
+				</div>
+				<div id="hoverMenu">
+					<div>
+						<ol>
+							<li><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_2.html">광민교육</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_3.html">대학소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_4.html">총장 인삿말</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_5.html">캠퍼스 안내</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">대학홍보</a></li>
+							<li><a href="">수시모집</a></li>
+							<li><a href="">입학도우미</a></li>
+							<li><a href="">입학상담</a></li>
+							<li><a href="">정시모집</a></li>
+							<li><a href="">학생부종합</a></li>
+
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+							<li><a href="/WebProject/univ/subclass.html">교양대학</a></li>
+							<li><a href="/WebProject/univ/univ_depart.html">대학-대학원</a></li>
+							<li><a href="/WebProject/univ/medical_home.html">보건바이오대학</a></li>
+							<li><a href="/WebProject/univ/art_home.html">인문예술대학</a></li>
+							<li><a href="/WebProject/univ/graduateSchool.html">일반대학원</a></li>
+							<li><a href="/WebProject/univ/science_home.html">자연과학대학</a></li>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/support/notice.htm">학사공지</a></li>
+							<li><a href="/WebProject/support/calendar.htm">학사일정</a></li>
+							<li><a href="/WebProject/support/teaching.htm">교직과정안내</a></li>
+							<li><a href="/WebProject/support/scholarship.htm">장학안내</a></li>
+							<li><a href="#">학사규정</a></li>
+							<li><a href="#">제-증명서 발급</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univercityActivity/army_act.html">예비군소개</a></li>
+							<li><a href="/WebProject/univercityActivity/employee.html" target="_blank">취-창업지원센터</a></li>
+							<li><a href="/WebProject/univercityActivity/bus.html">통학버스</a></li>
+							<li><a href="/WebProject/univercityActivity/dormitory.html">생활관 소개</a></li>
+							<li><a href="/WebProject/univercityActivity/community.html" target="_blank">학생커뮤니티</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/research/mainMenu6_1.html" target="_blank">산학협력단</a></li>
+							<li><a href="/WebProject/research/research.html">연구지원</a></li>
+							<li><a href="/WebProject/research/hello.html">산학혁렵단 인사말</a></li>
+							<li><a href="/WebProject/research/generalAnnounce.html">일반공고</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/organization/organization.html">기구조직표</a></li>
+							<li><a href="#">대학본부</a></li>
+							<li><a href="#">대학현황</a></li>
+							<li><a href="#">식단 안내</a></li>
+							<li><a href="#">주차 안내</a></li>
+							<li><a href="#">캠퍼스맵</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/gmuStory/mainMenu2_1.html">로그인</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_2.html">Media</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_3.html">Photo</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_4.html">공지사항</a></li>
+							<li><a href="#">보도자료</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_5.html">설문조사</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_6.html">학생회 소개</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</header>
+
+
+	<section>
+		<div id="sideMenu" class="sideMenu">
+			<img src="/WebProject/images/mini_banner/학사지원.png"
+				class="mini_menuimg" />
+			<ul style="margin: 0px;">
+				<li><a href="notice.htm">학사공지</a></li>
+				<li><a href="calendar.htm">학사일정</a></li>
+				<li><a href="teaching.htm">교직과정안내</a></li>
+				<li class="selected"><a href="scholarship.htm">장학안내</a></li>
+				<li><a href="#">학칙규정</a></li>
+				<li><a href="#">수강안내</a></li>
+				<li><a href="#">제ㆍ증명서발급</a></li>
+			</ul>
+		</div>
+		<div id="sectionContent" style="margin: 0px auto;">
+
+			<div class="title">장학제도</div>
+			
+			<div id="menubutton">
+				<ul>
+					<li><a href="scholarship.htm">교직교육 목적 및 교육목표</a></li>
+					<li><a href="#">장학금신청ㆍ지급</a></li>
+					<li><a href=#>장학캘린더</a></li>
+					<li><a href="http://www.kosaf.go.kr/ko/main.do">국가장학금ㆍ학자금대출</a></li>
+				</ul>
+				<div style="clear:both;"></div>
+			</div>
+			
+			<div id="scholarship">
+			
+				<div id="img1"></div>
+				<div id="img2"></div>
+				<div id="name">장학제도 개관</div>
+				<div id="text">세명대학교에서는 학칙 제64조에 따라 학업성적이 우수하고 품행이 방정한 학생과 성적이
+					우수하면서 가정형편이 곤란한 학생 및 봉사와 선행 등 모범이 되는 학생에게 장학금을 지급함으로써 장차 국가와 인류사회
+					발전에 이바지 할 인재양성을 위해 장학제도를 운영하고 있음.</div>
+			</div>
+			
+			<div class="smallTitle">교내장학금</div>
+			
+			<div class="content">
+				<table id="tblScholar">
+					<tr>
+						<th>장학종별</th>
+						<th>수혜자격</th>
+						<th>지급액</th>
+					</tr>
+					<tr>
+						<td rowspan="10">설립자 장학금</td>
+					</tr>
+					<tr>
+						<td>최초합격자</td>
+						<td>120만원</td>
+					</tr>
+					<tr>
+						<td>고른기회전형 및 학생부종합전형</td>
+						<td>100만원</td>
+					</tr>
+					<tr>
+						<td>기초생활수급자 및 차상위계층 전형 중<br>차상위계층 입학자</td>
+						<td>등록금50%</td>
+					</tr>
+					<tr>
+						<td>전체수석</td>
+						<td>등록금 전액 4(6)년간</td>
+					</tr>
+					<tr>
+						<td>모집군별 계열 수석</td>
+						<td>등록금 전액 4(6)년간</td>
+					</tr>
+					<tr>
+						<td>자매고등학교 출신자</td>
+						<td>입학금액</td>
+					</tr>
+					<tr>
+						<td>세명 미드필더</td>
+						<td>50만원</td>
+					</tr>
+					<tr>
+						<td>수학능력시험성적우수자</td>
+						<td rowspan="2">장학금지급시행세칙 3조 1항 참조</td>
+					</tr>
+					<tr>
+						<td>수능우수자 생활관비</td>
+					</tr>
+				</table>
+			</div>
+			
+			
+
+			<div class="satisfy_box">
+
+				<div>
+					<img src="/WebProject/images/in.png" class="icon_size" />
+					<div class="middle_text">담당부서 : 생활관팀</div>
+					<img src="/WebProject/images/man.png" class="icon_size" />
+					<div class="middle_text">담당자 : 김찬호</div>
+					<img src="/WebProject/images/tel.png" class="icon_size" />
+					<div class="middle_text">연락처 : 043-649-7202</div>
+					<div style="margin-left: 60px;">최종수정일 : 2018-08-06</div>
+				</div>
+				<div>
+					<img src="/WebProject/images/pen.png" class="icon_size" />
+					<div>이 페이지에서 제공하는 정보에 대하여 만족하시나요?</div>
+					<div>
+						<input type="radio" name="radiogroup" /><label>매우만족</label> <input
+							type="radio" name="radiogroup" /><label>만족</label> <input
+							type="radio" name="radiogroup" /><label>보통</label> <input
+							type="radio" name="radiogroup" /><label>불만족</label> <input
+							type="radio" name="radiogroup" /><label>매우불만족</label>
+					</div>
+					<div>
+						<input type="text" id="satisfy_text" /> <input type="button"
+							class="button small_bt" value="등록하기" />
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div style="clear: both;"></div>
+	</section>
+
+	<footer>
+		<div id="footerText">
+			<div id="logoImage">
+				<img src="/WebProject/images/GM_image.png" alt="" />
+			</div>
+			<div id="service">
+				<h4>고객광민센터 010-9357-0287</h4>
+				<div>운영시간 00:00 ~ 24:00,점심시간 X</div>
+				<div>*주말 및 공휴일은 1:1 문의/상담을 이용해주세요.</div>
+			</div>
+			<img id="TextImage" src="/WebProject/images/footerText.PNG" alt="" />
+
+			<div id="footerRightImage">
+				<div>
+					<img src="/WebProject/images/페이스북.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/트위터.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/위치.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

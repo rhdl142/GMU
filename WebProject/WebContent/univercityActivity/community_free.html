@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>광민대학교 커뮤니티 > 자유게시판</title>
+
+<style>
+	#menuBox{
+		width: 100%;
+		height: 100px;
+		opacity:0.85;
+		background-size: 100px;
+	}
+	
+	#menuBox > div {
+		float: left;
+	}
+	#menuBox >img{
+		float: left;
+	}
+	#communityLogo{
+		margin-top:20px;
+		width: 60px;
+		height: 60px;
+		float: left;
+	}
+	
+	#communityLogo+div{
+		margin-top:20px;
+		font-size: 35px;
+		font-weight: bold;
+		color: white;
+	}
+	
+	#communityLogo+div+div+div{
+		margin-top:-10px;
+		margin-left: 150px;
+		font-size: 20px;
+		font-weight: normal;
+		color: white;
+	}
+	
+	#notify{
+		margin-top:30px;
+		margin-left: 200px;
+		width: 60px;
+		height: 60px;
+	}
+	
+	#right{
+		margin-top:30px;
+		padding-bottom: 10px;
+	}
+	
+	#notify_box{
+		margin-top:30px;
+		width:400px;
+		height:50px;
+		border: 1px solid cornflowerblue; 	
+		float: left;
+		overflow: hidden;
+	}
+	
+	#notify_box > div{
+		animation-name:ani;
+		animation-duration:30s;
+		animation-iteration-count:infinite;
+		transition-timing-function:linear;
+		
+		font-size: 15px;
+		font-weight: bold;
+		color: white;
+		cursor: pointer;
+	}
+	@keyframes ani{
+		from{
+			transform:translate(0px,0px);
+		}
+		to{
+			transform:translate(0px,-200px);
+		}
+	}
+	
+	#submenu{
+		border: 0px solid;
+		width: 300px;
+		height: 100px;
+		margin-left: 20px;
+	}
+	
+	#submenu > img{
+		width: 50px;
+		height: 50px;
+		margin-left: 250px;
+		margin-top: 40px;
+		cursor: pointer;
+	}
+	
+	#submenu > img:hover + #submenuList{
+		opacity: 1;
+	}
+	
+	#submenuList:hover{
+		opacity: 1;
+	}
+	
+	
+	#submenuList{
+		border: 0px solid red;
+		display: inline-block;
+		width: 300px;
+		height: 50px;
+		background-color: rgba(90,100,180,0.7);
+		opacity: 0;
+		
+		transition: all 1s;
+	}
+	
+	#submenuList > div{
+		float: left;
+		font-weight: bold;
+		color: white;
+		margin: 10px;
+		cursor: pointer;
+	}
+	
+	.left_box{
+		width: 425px;
+		height: 200px;
+		
+		float: left;
+	}
+	.right_box{
+		margin-left:10px;
+		width: 425px;
+		height: 200px;
+		
+		float: left;
+	}
+	
+	
+	.titleName{
+		font-size: 13px;
+	}
+	
+	.date{
+	font-size: 12px;
+		font-weight: lighter;
+		margin-left: 20px;
+	}
+	
+	tr > td:nth-child(2):hover {
+		text-decoration: underline;
+	}
+
+
+	/* 페이징 관련  */
+	.page_num{
+	 	float: left;
+	 	width: 20px;
+	 	height: 20px;
+	 	border: 1px solid gray;
+	 	text-align: center;
+	 	margin: 0px 3px 0px 3px;
+	 	border-radius: 5px;
+	}
+	
+	.page_num:hover{
+		color: white;
+		background-color:black;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	
+	.side_bt{
+		margin-top: 3px;
+		margin-right: 1px;
+		cursor: pointer;
+	}
+	.side_bt:hover {
+		border: 1.5px solid gray;
+	}
+	#paging{
+		margin-top:10px;
+		margin-bottom:10px;
+		margin-left: 250px;
+	}
+</style>
+<link rel="stylesheet" href="/WebProject/css/common.css">
+<link rel="stylesheet" href="/WebProject/css/several.css">
+<link rel="stylesheet" href="/WebProject/css/font.css">
+</head>
+<body>
+	<header>
+		<div id="menuBox">
+				<div>
+				<img id="communityLogo" src="/WebProject/images/로고2.png" alt="로고" />
+				<div style="float:left;">광민대학교</div> <div style="clear: both;"></div>
+				<div>학생커뮤니티</div>
+				</div>
+			<img id="notify" alt="알림" src="/WebProject/images/seokhyon/m01.png">
+			<img id="right" alt="오른쪽 화살표" src="/WebProject/images/seokhyon/right.png">
+		
+			<div id="notify_box">
+				<div><번호팅, 봄이 다가옵니다> 꽃길... [2018-02-02]<br>
+번호팅에 대해서 궁금한 것이 있다면 ... [2018-03-21]<br>
+쎄임어스 포인트 지급 관련 안내 [2018-03-21]<br>
+쎄임어스 번호팅 조회에 관한 사전 안내 [2018-03-20]<br>
+번호팅에 대해서 궁금한 것이 있다면 ... [2018-03-21]<br>
+쎄임어스 포인트 지급 관련 안내 [2018-03-21]<br>
+쎄임어스 번호팅 조회에 관한 사전 안내 [2018-03-20]<br>
+번호팅에 대해서 궁금한 것이 있다면 ... [2018-03-21]<br>
+쎄임어스 포인트 지급 관련 안내 [2018-03-21]<br>
+쎄임어스 번호팅 조회에 관한 사전 안내 [2018-03-20]<br>
+번호팅에 대해서 궁금한 것이 있다면 ... [2018-03-21]<br>
+쎄임어스 포인트 지급 관련 안내 [2018-03-21]<br>
+쎄임어스 번호팅 조회에 관한 사전 안내 [2018-03-20]<br>
+				</div>
+			</div>
+			<div id="submenu">
+				<img alt="서브메뉴 아이콘" src="/WebProject/images/seokhyon/menu.png">
+				<div id="submenuList">
+					<div><a href="community.html">홈</a></div>
+					<div><a>공지사항</a></div>
+					<div><a href="community_free.html">자유게시판</a></div>
+					<div><a href="community_talk.html">프리톡</a></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section class="nonBorder">
+	<img src="/WebProject/images/로고2.png" alt="로고" style="width: 60px; height: 60px; float: left;"/>
+	<h1 style="float: left;">광민대학교 / 자유게시판</h1>
+	    		<div style="float: left;">
+          		<table class="bbsTable">
+          			<tr>
+          				<th>순번</th>
+          				<th>제목</th>
+          				<th>글쓴이</th>
+          				<th style="width: 100px;">등록일</th>
+          				<th>조회수</th>
+          				<th>좋아요</th>
+          			</tr>
+          			<tr>
+          				<td>38</td>
+          				<td>Kt&g 상상 유니브	</td>
+          				<td>복덩이</td>
+          				<td>2018-10-15</td>
+          				<td>6</td>
+          				<td>0</td>
+          			</tr>
+          			<tr>
+          				<td>37</td>
+          				<td>서울에서 통학하려는데 많이 힘들까요 ㅠㅠㅠ	</td>
+          				<td>라누잼이다</td>
+          				<td>2018-03-21</td>
+          				<td>29</td>
+          				<td>1</td>
+          			</tr>
+          			<tr>
+          				<td>36</td>
+          				<td>학교앞 맛집 추천해주세요	</td>
+          				<td>천안은눈이와</td>
+          				<td>2018-02-19</td>
+          				<td>52</td>
+          				<td>1</td>
+          			</tr>
+          			<tr>
+          				<td>35</td>
+          				<td>휴학해야할까요??</td>
+          				<td>power답변</td>
+          				<td>2018-02-19</td>
+          				<td>152</td>
+          				<td>1</td>
+          			</tr>
+          			<tr>
+          				<td>38</td>
+          				<td>Kt&g 상상 유니브	</td>
+          				<td>복덩이</td>
+          				<td>2018-10-15</td>
+          				<td>6</td>
+          				<td>0</td>
+          			</tr>
+          			<tr>
+          				<td>37</td>
+          				<td>서울에서 통학하려는데 많이 힘들까요 ㅠㅠㅠ	</td>
+          				<td>라누잼이다</td>
+          				<td>2018-03-21</td>
+          				<td>29</td>
+          				<td>1</td>
+          			</tr>
+          			<tr>
+          				<td>36</td>
+          				<td>학교앞 맛집 추천해주세요	</td>
+          				<td>천안은눈이와</td>
+          				<td>2018-02-19</td>
+          				<td>52</td>
+          				<td>1</td>
+          			</tr>
+          			<tr>
+          				<td>35</td>
+          				<td>휴학해야할까요??</td>
+          				<td>power답변</td>
+          				<td>2018-02-19</td>
+          				<td>152</td>
+          				<td>1</td>
+          			</tr>
+          			<tr>
+          				<td>38</td>
+          				<td>Kt&g 상상 유니브	</td>
+          				<td>복덩이</td>
+          				<td>2018-10-15</td>
+          				<td>6</td>
+          				<td>0</td>
+          			</tr>
+          			<tr>
+          				<td>37</td>
+          				<td>서울에서 통학하려는데 많이 힘들까요 ㅠㅠㅠ	</td>
+          				<td>라누잼이다</td>
+          				<td>2018-03-21</td>
+          				<td>29</td>
+          				<td>1</td>
+          			</tr>
+          			<tr>
+          				<td>36</td>
+          				<td>학교앞 맛집 추천해주세요	</td>
+          				<td>천안은눈이와</td>
+          				<td>2018-02-19</td>
+          				<td>52</td>
+          				<td>1</td>
+          			</tr>
+          			<tr>
+          				<td>35</td>
+          				<td>휴학해야할까요??</td>
+          				<td>power답변</td>
+          				<td>2018-02-19</td>
+          				<td>152</td>
+          				<td>1</td>
+          			</tr>
+          			<tr>
+          				<td>38</td>
+          				<td>Kt&g 상상 유니브	</td>
+          				<td>복덩이</td>
+          				<td>2018-10-15</td>
+          				<td>6</td>
+          				<td>0</td>
+          			</tr>
+          			<tr>
+          				<td>37</td>
+          				<td>서울에서 통학하려는데 많이 힘들까요 ㅠㅠㅠ	</td>
+          				<td>라누잼이다</td>
+          				<td>2018-03-21</td>
+          				<td>29</td>
+          				<td>1</td>
+          			</tr>
+          			<tr>
+          				<td>36</td>
+          				<td>학교앞 맛집 추천해주세요	</td>
+          				<td>천안은눈이와</td>
+          				<td>2018-02-19</td>
+          				<td>52</td>
+          				<td>1</td>
+          			</tr>
+          			<tr>
+          				<td>35</td>
+          				<td>휴학해야할까요??</td>
+          				<td>power답변</td>
+          				<td>2018-02-19</td>
+          				<td>152</td>
+          				<td>1</td>
+          			</tr>
+          			
+          			
+        
+          		</table>
+          		</div>
+          		<div style="clear: both;"></div>
+          
+          <div id="paging" >
+          	<input class="side_bt" type="button" style="background-image: url('/WebProject/images/seokhyon/left2.png'); background-size: 90%; height: 16px; float: left;" />
+          	<input class="side_bt" type="button" style="background-image: url('/WebProject/images/seokhyon/left.png'); background-size: 100%; height: 16px; float: left;" />
+        	<div class="page_num" style="color: white;background-color:black;font-weight: bold;" >1</div>
+        	<div class="page_num" >2</div>
+        	<div class="page_num" >3</div>
+        	<div class="page_num" >4</div>
+        	<div class="page_num" >5</div>
+        	<div class="page_num" >6</div>
+        	<div class="page_num" >7</div>
+        	<div class="page_num" >8</div>
+        	<div class="page_num" >9</div>
+        	<div class="page_num" >10</div>
+        	<input class="side_bt" type="button" style="background-image: url('/WebProject/images/seokhyon/right.png'); background-size: 90%; height: 16px; float: left;" />
+        	<input class="side_bt" type="button" style="background-image: url('/WebProject/images/seokhyon/right2.png'); background-size: 100%; height: 16px; float: left;" />
+          </div>
+          <div style="clear: both;"></div>
+          <div style="height: 80px;"></div>
+	<div class="satisfy_box">
+          			
+          			<div>
+          				<img src="/WebProject/images/in.png" class="icon_size"/>
+          				<div class="middle_text">담당부서 : 생활관팀</div>
+          				<img src="/WebProject/images/man.png" class="icon_size"/>
+          				<div class="middle_text">담당자 :  김찬호</div>
+          				<img src="/WebProject/images/tel.png" class="icon_size"/>
+          				<div class="middle_text">연락처 :  043-649-7202</div>
+          				<div style="margin-left: 60px;">최종수정일 :  2018-08-06</div>
+          			</div>
+          			<div>
+          				<img src="/WebProject/images/pen.png" class="icon_size"/>
+          				<div>이 페이지에서 제공하는 정보에 대하여 만족하시나요?</div>
+          				<div>
+          				<input type="radio" name="radiogroup" /><label>매우만족</label>
+          				<input type="radio" name="radiogroup" /><label>만족</label>
+          				<input type="radio" name="radiogroup" /><label>보통</label>
+          				<input type="radio" name="radiogroup" /><label>불만족</label>
+          				<input type="radio" name="radiogroup" /><label>매우불만족</label>
+          				</div>
+          				<div>
+          				<input type="text" id = "satisfy_text" />
+          				<input type="button" class="button small_bt" value="등록하기" />
+          				</div>
+          			</div>
+ 					
+          		</div>
+          		<div style="clear: both;"></div>
+	</section>
+	
+	<footer>
+            <div id="footerText">
+               <div id="logoImage">
+                  <img src="/WebProject/images/GM_image.png" alt="" />
+               </div>
+               <div id="service">
+               <h4>고객광민센터 010-9357-0287</h4>
+               <div>운영시간 00:00 ~ 24:00,점심시간 X</div>
+               <div>*주말 및 공휴일은 1:1 문의/상담을 이용해주세요.</div>               
+               </div>
+             <!-- <div class= "question">
+                  <img class= "bottomImage" src="../images/자주파는질문.png" alt="" />
+                  <div>자주하는질문</div>
+               </div>
+               <div class= "sangdam">
+                  <img class= "bottomImage" src="../images/1.1문의상담.png" alt="" />
+                  <div>고객 상담</div>
+               </div> -->
+               <img id="TextImage" src="/WebProject/images/footerText.PNG" alt="" />
+               
+               <div id="footerRightImage">
+                  <div>
+                     <img src="/WebProject/images/페이스북.png" alt="" />
+                  </div>
+                  <div>
+                     <img src="/WebProject/images/트위터.png" alt="" />
+                  </div>
+                  <div>
+                     <img src="/WebProject/images/위치.png" alt="" />
+                  </div>
+               </div>
+            </div>
+      </footer>
+</body>
+</html>

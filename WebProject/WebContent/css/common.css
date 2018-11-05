@@ -1,3 +1,9 @@
+#gmu > span{
+	color: white;
+	opacity: 0.85;
+	
+}
+
 html, body {
 	height: 100%;
 	margin: 0px;
@@ -12,8 +18,8 @@ body {
 header {
 	background-image: url("/WebProject/images/mainPageImg.png");
 	background-repeat: no-repeat;
-	width: 1663px;
-	background-size: 1663px;
+	width: 1905px;
+	background-size: 1905px;
 }
 
 .logo {
@@ -48,15 +54,15 @@ header {
 	margin-top: 15px;
 }
 
-#menu>span {
+#menu>span>a {
 	margin-left: 40px;
 	font-size : 20px;
 	color : white;
 }
 
-#menu span:nth-child(1):hover,#menu span:nth-child(2):hover,#menu span:nth-child(3):hover
-,#menu span:nth-child(4):hover,#menu span:nth-child(5):hover,#menu span:nth-child(6):hover
-,#menu span:nth-child(7):hover,#menu span:nth-child(8):hover {
+#menu span a:nth-child(1):hover,#menu span a:nth-child(2):hover,#menu span a:nth-child(3):hover
+,#menu span a:nth-child(4):hover,#menu span a:nth-child(5):hover,#menu span a:nth-child(6):hover
+,#menu span a:nth-child(7):hover,#menu span a:nth-child(8):hover {
 	border-bottom : 3px solid red;
 }
  
@@ -83,7 +89,23 @@ header {
 	border-radius: 20%;
 }
 
+#hoverMenu > div > ol > li:hover{
+		background-color: rgba(123,123,123,0.8);
+		border-radius: 10%; 
+		border-bottom: 1px solid red;
+	
+}
+
+#hoverMenu > div > ol > li:hover > a{
+	color: white;
+	font-weight: bold;
+}
+
 #menu:hover + #hoverMenu {
+	transform: translate(-5px, 0px);
+}
+
+#navsub:hover > #hoverMenu {
 	transform: translate(-5px, 0px);
 }
 

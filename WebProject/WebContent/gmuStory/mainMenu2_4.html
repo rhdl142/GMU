@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>광민대학교</title>
+	<style>
+		section {
+		}
+			
+		.title {
+			text-shadow: 2px 2px 0px gray;
+		}
+			
+		#content {
+			width : 860px;
+			margin-top : 50px;
+			height : 740px; 
+			overflow: hidden;
+		}
+		
+		table {
+			text-align: center;
+		}
+
+		tr>td:nth-child(2):hover {
+			text-decoration: underline;
+		}
+		
+		/* 페이징 관련  */
+		.page_num {
+			float: left;
+			width: 20px;
+			height: 20px;
+			border: 1px solid gray;
+			text-align: center;
+			margin: 0px 3px 0px 3px;
+			border-radius: 5px;
+		}
+		
+		.page_num:hover {
+			color: white;
+			background-color: black;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		
+		.side_bt {
+			margin-top: 3px;
+			margin-right: 1px;
+			cursor: pointer;
+		}
+		
+		.side_bt:hover {
+			border: 1.5px solid gray;
+		}
+		
+		#paging {
+			margin-left: 550px;
+		}
+		
+		#content {
+			text-align: center;
+		}
+		
+		#content > input {
+			width : 0px;
+		}
+		
+		#content > label {
+			display : inline-block;
+			font-size : 18px;
+			width : 30px;
+			height : 30px;
+			border-radius : 10%;
+			text-align: center;
+			background-color : #DED9D2;
+			margin-bottom: 30px;
+			margin-top: 50px;  
+		}
+		
+		#rbMenu1:checked + label{ border : 3px solid blue; }
+		#rbMenu2:checked + label{ border : 3px solid blue; }
+		#rbMenu3:checked + label{ border : 3px solid blue; }
+		#rbMenu4:checked + label{ border : 3px solid blue; }
+		#rbMenu5:checked + label{ border : 3px solid blue; }
+	</style>
+	<link rel="stylesheet" href="/WebProject/css/common.css">
+	<link rel="stylesheet" href="/WebProject/css/font.css">
+	<link rel="stylesheet" href="/WebProject/css/several.css">
+</head>
+<body>
+	<header>
+		<div id="nav">
+			<div id="navsub">
+				<img src="/WebProject/images/로고2.png" alt="로고" class="logo" />
+				<div id="gmu">
+					<span>광민대학교</span>
+				</div>
+				<div id="menu">
+					<span><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></span> <span><a href="">입학취업</a></span> <span><a href="">대학/대학원</a></span> <span><a href="/WebProject/support/notice.htm">학사지원</a></span>
+					<span><a href="/WebProject/univercityActivity/dormitory.html">대학생활</a></span> <span><a href="/WebProject/research/hello.html">연구/산학</a></span> <span><a href="/WebProject/organization/organization.html">기관/시설</a></span> <span><a href="/WebProject/gmuStory/mainMenu2_1.html">GMUStory</a></span>
+				</div>
+				<div id="hoverMenu">
+					<div>
+						<ol>
+							<li><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_2.html">광민교육</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_3.html">대학소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_4.html">총장 인삿말</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_5.html">캠퍼스 안내</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">대학홍보</a></li>
+							<li><a href="">수시모집</a></li>
+							<li><a href="">입학도우미</a></li>
+							<li><a href="">입학상담</a></li>
+							<li><a href="">정시모집</a></li>
+							<li><a href="">학생부종합</a></li>
+
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+							<li><a href="/WebProject/univ/subclass.html">교양대학</a></li>
+							<li><a href="/WebProject/univ/univ_depart.html">대학-대학원</a></li>
+							<li><a href="/WebProject/univ/medical_home.html">보건바이오대학</a></li>
+							<li><a href="/WebProject/univ/art_home.html">인문예술대학</a></li>
+							<li><a href="/WebProject/univ/graduateSchool.html">일반대학원</a></li>
+							<li><a href="/WebProject/univ/science_home.html">자연과학대학</a></li>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/support/notice.htm">학사공지</a></li>
+							<li><a href="/WebProject/support/calendar.htm">학사일정</a></li>
+							<li><a href="/WebProject/support/teaching.htm">교직과정안내</a></li>
+							<li><a href="/WebProject/support/scholarship.htm">장학안내</a></li>
+							<li><a href="#">학사규정</a></li>
+							<li><a href="#">제-증명서 발급</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univercityActivity/army_act.html">예비군소개</a></li>
+							<li><a href="/WebProject/univercityActivity/employee.html" target="_blank">취-창업지원센터</a></li>
+							<li><a href="/WebProject/univercityActivity/bus.html">통학버스</a></li>
+							<li><a href="/WebProject/univercityActivity/dormitory.html">생활관 소개</a></li>
+							<li><a href="/WebProject/univercityActivity/community.html" target="_blank">학생커뮤니티</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/research/mainMenu6_1.html" target="_blank">산학협력단</a></li>
+							<li><a href="/WebProject/research/research.html">연구지원</a></li>
+							<li><a href="/WebProject/research/hello.html">산학혁렵단 인사말</a></li>
+							<li><a href="/WebProject/research/generalAnnounce.html">일반공고</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/organization/organization.html">기구조직표</a></li>
+							<li><a href="#">대학본부</a></li>
+							<li><a href="#">대학현황</a></li>
+							<li><a href="#">식단 안내</a></li>
+							<li><a href="#">주차 안내</a></li>
+							<li><a href="#">캠퍼스맵</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/gmuStory/mainMenu2_1.html">로그인</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_2.html">Media</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_3.html">Photo</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_4.html">공지사항</a></li>
+							<li><a href="#">보도자료</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_5.html">설문조사</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_6.html">학생회 소개</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</header>
+	
+	<section>
+		<div id="sideMenu" class="sideMenu">
+			<img src="/WebProject/images/mini_banner/gmustory.png" class="mini_menuimg" />
+			<ul style="margin: 0px;">
+				<li><a href="mainMenu2_2.html">광민소식지</a></li>
+				<li><a href="mainMenu2_3.html">학생활동</a></li>
+				<li class="selected"><a href="mainMenu2_4.html">일반공지</a></li>
+				<li><a href="mainMenu2_5.html">GMU 설문조사</a></li>
+				<li><a href="mainMenu2_6.html">학생회 소개</a></li>
+			</ul>
+		</div>
+		<div id="sectionContent" style="margin: 0px auto;">
+			<div class="title">일반공지</div>
+			<div id="content">
+				<table class="bbsTable">
+					<tr>
+						<th style="width : 20px;">순번</th>
+						<th>제목</th>
+						<th style="width : 60px;">부서명</th>
+						<th style="width:80px;">등록일</th>
+						<th style="width : 40px;">조회</th>
+						<th>첨부</th>
+					</tr>
+					<tr>
+						<td>1740</td>
+						<td>2018년도 농림축산식품 연구개발사업 시행계획 추진</td>
+						<td>인사과</td>
+						<td>2018-10-15</td>
+						<td>32</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1739</td>
+						<td>2019년 농촌진흥청 농업과학기술 연구개발사업 신규과제</td>
+						<td>지도부</td>
+						<td>2018-10-04</td>
+						<td>39</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1738</td>
+						<td>KOICA 성과중심 봉사단  위탁기관 공모...</td>
+						<td>지도부</td>
+						<td>2018-09-28</td>
+						<td>26</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1737</td>
+						<td>‘19년 지원 사외공모 기초연구개별  모집 공모...</td>
+						<td>생활부</td>
+						<td>2018-09-20</td>
+						<td>21</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1736</td>
+						<td>학교 현장 재난대비훈련 매뉴얼 및 사전교육</td>
+						<td>생활부</td>
+						<td>2018-09-18</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1735</td>
+						<td>충남대학교 기술 융·복합 프로젝트 지원사업 공고...</td>
+						<td>환경부</td>
+						<td>2018-09-10</td>
+						<td>38</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1734</td>
+						<td>2018년도 기후변화대응 환경기술개발사업 신규과제...</td>
+						<td>환경부</td>
+						<td>2018-09-04</td>
+						<td>21</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1733</td>
+						<td>2018년 과학영재교육 정책연구 공모</td>
+						<td>지도부</td>
+						<td>2018-08-29</td>
+						<td>27</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1732</td>
+						<td>대학자율역량강화지원사업 성과 백서 연구 공모 안내...</td>
+						<td>지도부</td>
+						<td>2018-08-28</td>
+						<td>27</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1731</td>
+						<td>2018년도 연구노트 작성·관리 실태 점검</td>
+						<td>지도부</td>
+						<td>2018-08-27</td>
+						<td>16</td>
+						<td></td>
+					</tr>
+	
+				</table>
+				<input type="radio" name="rbMenu" id="start"> <label for="start">◀</label>
+				<input type="radio" name="rbMenu" id="rbMenu1" checked> <label for="rbMenu1">1</label>
+				<input type="radio" name="rbMenu" id="rbMenu2"> <label for="rbMenu2">2</label>
+				<input type="radio" name="rbMenu" id="rbMenu3"> <label for="rbMenu3">3</label>
+				<input type="radio" name="rbMenu" id="rbMenu4"> <label for="rbMenu4">4</label>
+				<input type="radio" name="rbMenu" id="rbMenu5"> <label for="rbMenu5">5</label>
+				<input type="radio" name="rbMenu" id="end"> <label for="end">▶</label>
+			</div>
+			<div style="clear:both;"></div>
+			
+			<div class="satisfy_box">
+
+				<div>
+					<img src="/WebProject/images/in.png" class="icon_size" />
+					<div class="middle_text">담당부서 : 생활관팀</div>
+					<img src="/WebProject/images/man.png" class="icon_size" />
+					<div class="middle_text">담당자 : 김찬호</div>
+					<img src="/WebProject/images/tel.png" class="icon_size" />
+					<div class="middle_text">연락처 : 043-649-7202</div>
+					<div style="margin-left: 60px;">최종수정일 : 2018-08-06</div>
+				</div>
+				<div>
+					<img src="/WebProject/images/pen.png" class="icon_size" />
+					<div>이 페이지에서 제공하는 정보에 대하여 만족하시나요?</div>
+					<div>
+						<input type="radio" name="radiogroup" /><label>매우만족</label> <input
+							type="radio" name="radiogroup" /><label>만족</label> <input
+							type="radio" name="radiogroup" /><label>보통</label> <input
+							type="radio" name="radiogroup" /><label>불만족</label> <input
+							type="radio" name="radiogroup" /><label>매우불만족</label>
+					</div>
+					<div>
+						<input type="text" id="satisfy_text" /> <input type="button"
+							class="button small_bt" value="등록하기" />
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div style="clear: both;"></div>
+	</section>
+
+	<footer>
+		<div id="footerText">
+			<div id="logoImage">
+				<img src="/WebProject/images/GM_image.png" alt="" />
+			</div>
+			<div id="service">
+				<h4>고객광민센터 010-9357-0287</h4>
+				<div>운영시간 00:00 ~ 24:00,점심시간 X</div>
+				<div>*주말 및 공휴일은 1:1 문의/상담을 이용해주세요.</div>
+			</div>
+			<img id="TextImage" src="/WebProject/images/footerText.PNG" alt="" />
+
+			<div id="footerRightImage">
+				<div>
+					<img src="/WebProject/images/페이스북.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/트위터.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/위치.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

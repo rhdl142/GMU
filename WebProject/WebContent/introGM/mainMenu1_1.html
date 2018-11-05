@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>광민대학교</title>
+	<style>
+		section {
+		}
+			
+		.title {
+			text-shadow: 2px 2px 0px gray;
+		}
+			
+		#content {
+			width : 860px;
+			border : 1px solid black;
+			background-color : #DED9D2;
+			margin-top : 50px;
+		}
+		
+		#contentTitle {
+			text-decoration: underline; 
+			text-align: right;
+			margin : 30px 50px; 
+		}
+		
+		#sentence1 {
+			width : 450px;
+		}
+		
+		#sentence1:hover {
+			transform : scale(1.5,1.5);
+		}
+		
+		#content > p{
+			width : 450px;
+			text-align : justify;
+			line-height: 2em;
+			margin-left : 20px;
+			float : left;
+		}
+
+		#logoImg > img {
+			 width : 360px;
+			 margin-bottom: 80px; 
+			 margin-left : 15px;
+		}
+		
+		#logoImg > img:hover {
+			 transform : scale(2,2);
+		}
+		
+		#addContent {
+			width : 860px;
+			margin-top : 50px;
+			margin-bottom : 100px;
+			text-align : center;
+		}
+		
+		#addInfo {
+			width : 50px;
+			display: inline-block;
+		}
+		
+		#txt {
+			text-align : justify;
+			line-height: 2.5em;
+			margin : 30px;
+			overflow: hidden;
+			transition: all 1s;
+			transform: scale(0, 0) rotate(0deg);
+			opacity: 0;
+		}
+				
+		#cb1:checked + label + #txt {
+			transform: scale(1, 1) rotate(3600deg);
+			opacity: 1;
+		}
+	</style>
+	<link rel="stylesheet" href="/WebProject/css/common.css">
+	<link rel="stylesheet" href="/WebProject/css/font.css">
+	<link rel="stylesheet" href="/WebProject/css/several.css">
+</head>
+<body>
+	<header>
+		<div id="nav">
+			<div id="navsub">
+				<img src="/WebProject/images/로고2.png" alt="로고" class="logo" />
+				<div id="gmu">
+					<span>광민대학교</span>
+				</div>
+				<div id="menu">
+					<span><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></span> <span><a href="">입학취업</a></span> <span><a href="">대학/대학원</a></span> <span><a href="/WebProject/support/notice.htm">학사지원</a></span>
+					<span><a href="/WebProject/univercityActivity/dormitory.html">대학생활</a></span> <span><a href="/WebProject/research/hello.html">연구/산학</a></span> <span><a href="/WebProject/organization/organization.html">기관/시설</a></span> <span><a href="/WebProject/gmuStory/mainMenu2_1.html">GMUStory</a></span>
+				</div>
+				<div id="hoverMenu">
+					<div>
+						<ol>
+							<li><a href="/WebProject/introGM/mainMenu1_1.html">광민소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_2.html">광민교육</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_3.html">대학소개</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_4.html">총장 인삿말</a></li>
+							<li><a href="/WebProject/introGM/mainMenu1_5.html">캠퍼스 안내</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="">대학홍보</a></li>
+							<li><a href="">수시모집</a></li>
+							<li><a href="">입학도우미</a></li>
+							<li><a href="">입학상담</a></li>
+							<li><a href="">정시모집</a></li>
+							<li><a href="">학생부종합</a></li>
+
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+							<li><a href="/WebProject/univ/subclass.html">교양대학</a></li>
+							<li><a href="/WebProject/univ/univ_depart.html">대학-대학원</a></li>
+							<li><a href="/WebProject/univ/medical_home.html">보건바이오대학</a></li>
+							<li><a href="/WebProject/univ/art_home.html">인문예술대학</a></li>
+							<li><a href="/WebProject/univ/graduateSchool.html">일반대학원</a></li>
+							<li><a href="/WebProject/univ/science_home.html">자연과학대학</a></li>
+							<li><a href="/WebProject/univ/enginerring_home.html">공학과학대학</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/support/notice.htm">학사공지</a></li>
+							<li><a href="/WebProject/support/calendar.htm">학사일정</a></li>
+							<li><a href="/WebProject/support/teaching.htm">교직과정안내</a></li>
+							<li><a href="/WebProject/support/scholarship.htm">장학안내</a></li>
+							<li><a href="#">학사규정</a></li>
+							<li><a href="#">제-증명서 발급</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/univercityActivity/army_act.html">예비군소개</a></li>
+							<li><a href="/WebProject/univercityActivity/employee.html" target="_blank">취-창업지원센터</a></li>
+							<li><a href="/WebProject/univercityActivity/bus.html">통학버스</a></li>
+							<li><a href="/WebProject/univercityActivity/dormitory.html">생활관 소개</a></li>
+							<li><a href="/WebProject/univercityActivity/community.html" target="_blank">학생커뮤니티</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/research/mainMenu6_1.html" target="_blank">산학협력단</a></li>
+							<li><a href="/WebProject/research/research.html">연구지원</a></li>
+							<li><a href="/WebProject/research/hello.html">산학혁렵단 인사말</a></li>
+							<li><a href="/WebProject/research/generalAnnounce.html">일반공고</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/organization/organization.html">기구조직표</a></li>
+							<li><a href="#">대학본부</a></li>
+							<li><a href="#">대학현황</a></li>
+							<li><a href="#">식단 안내</a></li>
+							<li><a href="#">주차 안내</a></li>
+							<li><a href="#">캠퍼스맵</a></li>
+						</ol>
+					</div>
+					<div>
+						<ol>
+							<li><a href="/WebProject/gmuStory/mainMenu2_1.html">로그인</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_2.html">Media</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_3.html">Photo</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_4.html">공지사항</a></li>
+							<li><a href="#">보도자료</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_5.html">설문조사</a></li>
+							<li><a href="/WebProject/gmuStory/mainMenu2_6.html">학생회 소개</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</header>
+	
+	<section>
+		<div id="sideMenu" class="sideMenu">
+			<img src="/WebProject/images/mini_banner/광민소개.png"
+				class="mini_menuimg" />
+			<ul style="margin: 0px;">
+				<li class="selected"><a href="mainMenu1_1.html">광민소개</a></li>
+				<li><a href="mainMenu1_2.html">광민교육</a></li>
+				<li><a href="mainMenu1_3.html">대학소개</a></li>
+				<li><a href="mainMenu1_4.html">총장 인삿말</a></li>
+				<li><a href="mainMenu1_5.html">캠퍼스 안내</a></li>
+			</ul>
+		</div>
+		<div id="sectionContent" style="margin: 0px auto;">
+			<div class="title">광민 소개</div>
+			<div id="content">
+				<div class="bigTitle" id="contentTitle">광민光民의 이념</div>
+				<img src="/WebProject/images/광민소개/문장1.png" alt="" id="sentence1" />
+				<p>
+					&nbsp&nbsp&nbsp인재양성이 국가의 미래! 세상을 밝게 비추는 인재양성 광민대학교는 세상을 밝히는 우수한 인재를 양성한다는 건학이념으로 사회와 기업에서 미드필더 역할을 하는 핵심 인재를 양성하고 있습니다.
+					무한한 가능성을 키워온 대학 청년의 꿈을 광민대학교와 함께 2018년, 개교 38주년을 맞은 우리 광주대학교는 질적, 양적 모든 측면에서 눈부신 발전을 일구어 한국 사학 발전사에 이정표가 될만한 발자취를 이어왔습니다.
+					현재는 3개 대학원 55개전공의 석·박사학위 과정과 6개 단과대학 42개 학부·과 57개 전공의 학사학위 과정에 8천 여명의 학생이 학문에 정진하고 있는 명문사학으로 발돋움하였으며, 2004년부터는 일반대학으로 새로운 역사를 시작하였습니다.
+				</p>
+				<div id="logoImg"><img src="/WebProject/images/광민소개/로고.png" alt=""/></div>
+				<div style="clear:both;"></div>
+			</div>
+			
+			<div id="addContent">
+				<img src="/WebProject/images/광민소개/자세히보기.png" alt="" id="addInfo" />
+				<input type="checkbox" id="cb1"> <label for="cb1">자세히보기</label>
+				<div id="txt">
+					월계관은 경기의 승리나 학문 등의 업적에서 명예와 영광을 상징하며, 으뜸가는 학문적 영예의 전당으로서의 서울대학교를 의미한다. 그리고 펜과 횃불은 지식의 탐구를 통해 겨레의 길을 밝히는데 앞장서겠다는 의지를 나타낸다. 이러한 바탕 위에 펼쳐진 책에는 라틴어 'VERITAS LUX MEA' 가 적혀있고 이는'진리는 나의 빛'을 의미한다.
+					정장의 원형은 개교 후 1947~48년 경 처음 만들어진 것으로 추정되고, 각 단과 대학별로 약간씩 다른 모양을 해오다 1955년에 통일된 정장을 선보였다. 이후 관악캠퍼스의 정문 심볼이 추가되고, 2006년에 청람색에 가까운 서울대 고유색이 UI색상으로 지정되었다.
+				</div>
+			</div>
+
+			<div class="satisfy_box">
+
+				<div>
+					<img src="/WebProject/images/in.png" class="icon_size" />
+					<div class="middle_text">담당부서 : 생활관팀</div>
+					<img src="/WebProject/images/man.png" class="icon_size" />
+					<div class="middle_text">담당자 : 김찬호</div>
+					<img src="/WebProject/images/tel.png" class="icon_size" />
+					<div class="middle_text">연락처 : 043-649-7202</div>
+					<div style="margin-left: 60px;">최종수정일 : 2018-08-06</div>
+				</div>
+				<div>
+					<img src="/WebProject/images/pen.png" class="icon_size" />
+					<div>이 페이지에서 제공하는 정보에 대하여 만족하시나요?</div>
+					<div>
+						<input type="radio" name="radiogroup" /><label>매우만족</label> <input
+							type="radio" name="radiogroup" /><label>만족</label> <input
+							type="radio" name="radiogroup" /><label>보통</label> <input
+							type="radio" name="radiogroup" /><label>불만족</label> <input
+							type="radio" name="radiogroup" /><label>매우불만족</label>
+					</div>
+					<div>
+						<input type="text" id="satisfy_text" /> <input type="button"
+							class="button small_bt" value="등록하기" />
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div style="clear: both;"></div>
+	</section>
+
+	<footer>
+		<div id="footerText">
+			<div id="logoImage">
+				<img src="/WebProject/images/GM_image.png" alt="" />
+			</div>
+			<div id="service">
+				<h4>고객광민센터 010-9357-0287</h4>
+				<div>운영시간 00:00 ~ 24:00,점심시간 X</div>
+				<div>*주말 및 공휴일은 1:1 문의/상담을 이용해주세요.</div>
+			</div>
+			<img id="TextImage" src="/WebProject/images/footerText.PNG" alt="" />
+
+			<div id="footerRightImage">
+				<div>
+					<img src="/WebProject/images/페이스북.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/트위터.png" alt="" />
+				</div>
+				<div>
+					<img src="/WebProject/images/위치.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

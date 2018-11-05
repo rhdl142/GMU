@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+		/* html, body {
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+		} */
+		
+		/* section {
+			min-height: calc(100vh- 232px);
+		} */
+		
+		#mainFrame{
+			width: 100%;
+			height: 910px;
+			border: 0px solid black;
+		}
+		
+		#mainFrame > div {
+			float: left;
+		}
+		
+		#leftDiv {
+			width:33.3%;
+			background-color: #DAB3B4;
+			border: 0px solid red;
+			height: 100%;
+		}
+		
+		#middleDiv {
+			width:33.3%;
+			background-color: #BE8687;
+			border: 0px solid blue;
+			height: 100%;
+		}
+		
+		#rightDiv {
+			width:33.3%;
+			background-color: #DAB3B4;
+			border: 0px solid yellow;
+			height: 100%;
+		}
+		
+		.mainLogo {
+			border: 0px solid black;
+			margin-top: 220px;
+			/* padding-top: -200px; */
+		}
+		
+		.mainLogo > img {
+			width: 150px;
+			height: 150px;
+			margin: 100px auto;
+			display: block;
+		}
+		
+		.mainBox {
+			width: 100px;
+			height: 100px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 40px;
+		}
+		
+		.mainText {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			width: 100%;
+			text-align: center;
+			border: 1px solid #BB9B9B;
+			/* background-color: #BB9B9B; */
+		}
+		
+		.mainText:hover {
+			cursor:pointer;
+			background-color: #BB9B9B;
+			border: 1px solid gray;
+		}
+</style>
+	<!-- <link rel="stylesheet" href="/WebProject/css/common.css"> -->
+	<link rel="stylesheet" href="/WebProject/css/font.css">
+	<!-- <link rel="stylesheet" href="/WebProject/css/several.css"> -->
+</head>
+<body>
+	<div id="mainFrame">
+		<div id="leftDiv">
+			<div class="mainLogo">
+				<img src="/WebProject/images/GM_image.png" alt="" />
+			</div>
+			<div class="mainBox">
+				<div class="mainText">網站</div>			
+				<div class="mainText">課程註冊</div>			
+				<div class="mainText">路线</div>
+			</div>
+		</div>
+		<div id="middleDiv">
+			<div class="mainLogo">
+				<img src="/WebProject/images/GM_image.png" alt="" />
+			</div>
+			<div class="mainBox">
+				<div class="mainText"><a href="/WebProject/introGM/mainMenu1_1.html" style="text-decoration: none; color: black;">홈페이지</a></div>			
+				<div class="mainText">수강신청</div>			
+				<div class="mainText">오시는 길</div>
+			</div>
+		</div>
+		<div id="rightDiv">
+			<div class="mainLogo">
+				<img src="/WebProject/images/GM_image.png" alt="" />
+			</div>
+			<div class="mainBox">
+				<div class="mainText">Home page</div>			
+				<div class="mainText">Enrolment</div>			
+				<div class="mainText">Way to come</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
